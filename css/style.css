@@ -17,6 +17,7 @@
     grid-column: 1 / -1;
     border-radius: 10px;
     background-color: slateblue;
+    background: linear-gradient(0deg, rgba(38,27,107,1) 0%, rgba(106,90,205,1) 35%, rgba(38,27,107,1) 100%);
     
 }
 
@@ -60,6 +61,7 @@ footer {
     grid-column: 1 / -1;
     grid-row: -3 / -1;
     background-color: slateblue;
+    background: linear-gradient(0deg, rgba(38,27,107,1) 0%, rgba(106,90,205,1) 35%, rgba(38,27,107,1) 100%);
     text-align: center;
     border: 1px solid white;
     color: white;
