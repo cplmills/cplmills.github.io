@@ -54,7 +54,7 @@ h2 {
     grid-column: 1 / -2;
 }
 
-#footer {
+footer {
     display: grid;
     grid-template-columns: 4fr 0.1fr 12rem 0.1fr;
     grid-column: 1 / -1;
