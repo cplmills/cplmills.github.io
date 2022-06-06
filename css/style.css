@@ -1,1 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+#main-container {
+    width: 80%;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+
+}
+
+#banner {
+    border-radius: 10px;
+    border: 1px slateblue;
+    width: 100%;
+}
+
+#mugshot {
+    width: 1fr;
+    display: block;
+    grid-column: 3/4;
+
+}
