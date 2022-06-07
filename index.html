@@ -6,34 +6,35 @@
         <meta name="description" content="Assignment portal for Chris Mills in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
         <title>Chris Mills</title>
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
     </head>
+
     <body>
         <div id="main-container">
-            <div id="banner">
+            <header>
+                <div id="mugshot">
+                    <img src="/images/mugshot.jpeg" alt="Picture of Chris' head">
+                </div>
                 <h1>Chris Mills</h1>
-            </div>
+            </header>
             <main class="section">
                 <h2>WDD 230: Assignment Portal</h2>
                 <ol>
                     <li>Lesson 01: <a href="#">Course Assignments Portal</a></li>
                     <li>Lesson 02: <a href="#">Design Principles Document</a></li>
                 </ol>
-
             </main>
-            <div id="mugshot">
-                <img src="/images/mugshot.jpeg" alt="Picture of Chris' head">
-            </div>
             <footer>
                 <div id="footer-content">
                     <span>&copy 2022 | Chris Mills | Gold Coast | <a href="https://www.byui.edu/online">BYUI Online Learning</a></span>
                     <span class="yellow">Last Updated: 05/06/2022 16:50:00</span>
                 </div>
-            </div>
+            </footer>
+            <script type="text/javascript">
+                let modifiedDate = document.lastModified;
+                document.querySelector(".yellow").innerHTML = "Last Updated: " + modifiedDate;
+            </script>
         </div>
-        <script type="text/javascript">
-            let modifiedDate = document.lastModified;
-            document.querySelector(".yellow").innerHTML = "Last Updated: " + modifiedDate;
-        </script>
     </body>
 </html>
