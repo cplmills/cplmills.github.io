@@ -6,9 +6,10 @@ body {
 
 main {
     position:relative;
-    /* top: 50px; */
     height: 80vh;
     width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 2fr;
@@ -69,12 +70,6 @@ main {
     grid-column: 3 / 4;
 }
 
-@media only screen and (max-width: 768px){
-    #container {
-        display: block;
-    }
-}
-
 h2 {
     border-bottom: 1px solid rgb(196, 191, 191);
 }
@@ -84,4 +79,30 @@ h1 {
     background: linear-gradient(0deg, rgba(38,27,107,1) 0%, rgba(106,90,205,1) 35%, rgba(38,27,107,1) 100%);
     color: white;
     padding: 5px;
+}
+
+@media only screen and (max-width: 768px){
+    main {
+        position: static;
+        display: block;
+    }
+
+    .tile {
+        display: block;
+        opacity: 1;
+        clear: both;
+    }
+    
+    .tile > img {
+        width: 100%;
+    }
+
+    .tile-text {
+        display: block;
+        clear: both;
+    }
+
+    span {
+        display: inline-block;
+    }
 }
