@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap');
+
+body {
+    font-family: 'Merriweather Sans', sans-serif;
+    background-image: url("/lesson2/images/clouds.jpeg");
+    background-size: cover;
+}
+
+nav {
+    background-color: #086788;
+    color: white;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    overflow: hidden;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+nav ul li {
+    flex: 1 1 auto;
+}
+
+nav ul li a {
+    display: block;
+    text-align: center;
+    padding: 0.75rem;
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    background-color: #FFFFFF;
+    color:#086788;
+}
+
+#logo-text, #logo-description {
+    padding: 0px;
+    margin-block-start: 0.8em;
+
+}
+
+#logo-text {
+    font-size: 2.5em;
+}
+
+#logo-description {
+    font-size: 1.5em;
+    margin-top: -1em;
+}
+
+h1, h2 {
+    margin: 0px;
+    padding: 4px;
+
+}
+
+h1 {
+    background-image: linear-gradient(to right, #086788, white); 
+    color: white;       
+}
+
+main h2 {
+    background-image: linear-gradient(to right, #07a0c3, white)
+}
+
+.highlighted-text {
+    background-color: #FE5F55;
+    padding: 5px;
+    border: 1px solid black;
+    box-shadow: 3px 3px 10px ;
+}
+#logo {
+    content: "";
+    clear: both;
+    display: table;
+    width: 100%;
+}
+
+#logo img{
+    float: left;
+    width: 30%;
+    max-width: 150px;
+    padding-right: 1em;
+    
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+    background-color: rgba(255,255,255,.8);
+    height: 100%;
+    border: 1px solid grey;
+}
+
+
+/* Colour scheme page css */
+#color-schemes-1 {
+    background-color: #086788;
+}
+
+#color-schemes-2 {
+    background-color: #07a0c3;
+}
+#color-schemes-3 {
+    background-color: #FE5F55;
+}
+#color-schemes-4 {
+    background-color: #f3de8a;
+}
+#olor-schemes-5 {
+    background-color: #FFFFFF;
+}
+
+.tile {
+    border: 1px solid grey;
+    display: block;
+    width: calc(93% / 5);
+    float: left;
+    height: 100vh;
+    padding: 5px;
+}
