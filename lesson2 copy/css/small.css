@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap');
+
+body {
+    font-family: 'Merriweather Sans', sans-serif;
+    background-image: url("/lesson2/images/clouds.jpeg");
+    background-size: cover;
+    font-size: 1rem;
+}
+
+nav {
+    background-color: #086788;
+    max-width: 760px;
+}
+
+.navigation {
+    padding-inline-start: 0px;
+}
+
+nav li {
+    display: none;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li {
+    text-align: center;
+    border: 1px solid #086788;
+}
+
+nav ul li a {
+    padding: 0.5em;
+}
+
+nav ul li a:hover {
+    background-color: #FFFFFF;
+    color:#086788;
+}  
+
+.responsive li{
+    display: block;
+}
+#logo-text, #logo-description {
+    padding: 0px;
+}
+
+#logo-text {
+    text-align: center;
+    color: black;
+    background: none;
+}
+
+#logo-description {
+    font-size: 4vw;
+    text-align: center;
+    background: none;
+}
+
+h1, h2 {
+    margin: 0px;
+    padding: 4px;
+    font-size: calc(100% + 2vw);
+    word-wrap:break-word;
+    white-space: normal;
+}
+
+h1 {
+    background-image: linear-gradient(to right, #086788, white); 
+    color: white;       
+}
+
+main h2 {
+    background-image: linear-gradient(to right, #07a0c3, white)
+}
+
+.highlighted-text {
+    background-color: #FE5F55;
+    padding: 5px;
+    border: 1px solid black;
+    box-shadow: 3px 3px 10px ;
+}
+/* #logo { */
+    /* content: ""; */
+    /* clear: both; */
+    /* display: table; */
+    /* width: 100%; */
+/* } */
+
+#logo img{
+    /* float: left; */
+    width: 30%;
+    display: block;
+    max-width: 150px;
+    /* padding-right: 1em; */
+    margin: 0 auto;
+    
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+    background-color: rgba(255,255,255,.8);
+    height: 100%;
+    border: 1px solid grey;
+}
+
+main p, a {
+    padding-left: 1em;
+}
+/* Colour scheme page css */
+#color-schemes-1 {
+    background-color: #086788;
+}
+
+#color-schemes-2 {
+    background-color: #07a0c3;
+}
+#color-schemes-3 {
+    background-color: #FE5F55;
+}
+#color-schemes-4 {
+    background-color: #f3de8a;
+}
+#olor-schemes-5 {
+    background-color: #FFFFFF;
+}
+
+.tile {
+    border: 1px solid grey;
+    display: block;
+    width: calc(93% / 5);
+    float: left;
+    height: 100vh;
+    padding: 5px;
+}

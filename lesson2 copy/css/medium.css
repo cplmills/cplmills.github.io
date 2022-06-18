@@ -1,0 +1,33 @@
+@media only screen and (min-width:32.5em){
+    .navigation {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .navigation li:first-child {
+        display: none;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    .navigation li a {
+        color: white;
+    }
+
+    nav {
+        margin: 0 auto;
+        max-width: 98%;
+        list-style: none;
+        justify-content: flex-start;
+    }
+
+    nav li a {
+        display: block;
+        padding: 10px;
+    }
+
+
+}
