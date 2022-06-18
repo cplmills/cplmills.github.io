@@ -3,8 +3,14 @@
 body {
     font-family: 'Merriweather Sans', sans-serif;
     background-image: url("/lesson2/images/clouds.jpeg");
+    background-attachment: fixed;
     background-size: cover;
     font-size: 1rem;
+    margin: 0;
+}
+
+header {
+    background-color: rgba(255,255,255,0.6);  
 }
 
 nav {
@@ -47,6 +53,7 @@ nav ul li a:hover {
 .responsive li{
     display: block;
 }
+
 #logo-text, #logo-description {
     padding: 0px;
 }
@@ -55,18 +62,26 @@ nav ul li a:hover {
     text-align: center;
     color: black;
     background: none;
+    font-size: 2rem;;
 }
 
 #logo-description {
-    font-size: 4vw;
+    font-size: 1rem;
     text-align: center;
     background: none;
+    padding-bottom: 1rem;
+}
+
+main section {
+    background-color: lightblue;
+    border: 1px dashed blue;
+    margin: 0.4em 0;
 }
 
 h1, h2 {
     margin: 0px;
     padding: 4px;
-    font-size: calc(100% + 2vw);
+    /* font-size: calc(100% + 2vw); */
     word-wrap:break-word;
     white-space: normal;
 }
@@ -86,25 +101,17 @@ main h2 {
     border: 1px solid black;
     box-shadow: 3px 3px 10px ;
 }
-/* #logo { */
-    /* content: ""; */
-    /* clear: both; */
-    /* display: table; */
-    /* width: 100%; */
-/* } */
+
 
 #logo img{
-    /* float: left; */
-    width: 30%;
     display: block;
     max-width: 150px;
-    /* padding-right: 1em; */
     margin: 0 auto;
     
 }
 
 main {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     background-color: rgba(255,255,255,.8);
     height: 100%;
@@ -114,6 +121,39 @@ main {
 main p, a {
     padding-left: 1em;
 }
+
+footer {
+    display: block;
+}
+
+footer ul {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+footer li {
+    font-size: 80%;
+    text-align: center;
+    display: inline-block;
+    flex: 1 1 100%;
+    padding: 5px;
+}
+
+footer li:nth-child(2){
+    border-left: 1px solid #086788;
+    border-right: 1px solid #086788;
+}
+
+footer p {
+    display: block;
+    text-align: center;
+    font-size: 80%;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 1em;
+}
+
 /* Colour scheme page css */
 #color-schemes-1 {
     background-color: #086788;
