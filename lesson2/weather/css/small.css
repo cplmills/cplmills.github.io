@@ -72,7 +72,7 @@ nav ul li a:hover {
     padding-bottom: 1rem;
 }
 
-main section {
+main .section {
     background-color: lightblue;
     border: 1px dashed blue;
     margin: 0.4em 0;
