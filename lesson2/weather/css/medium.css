@@ -1,14 +1,19 @@
-@media only screen and (min-width:32.5em){
+@media only screen and (min-width:720px){
     
     header {
         display: flex;
         align-content: center;
         justify-content: center;
         align-items: center;
-    }
+    } 
      
     #logo-text {
         font-size: 3rem;
+    }
+   
+    #logo {
+        display: block;
+        min-width: 15%;
     }
     
     #logo-description {
@@ -16,7 +21,7 @@
     }
 
     #logo img {
-        padding: 10px;
+        min-width: 100%;
     }
 
     .navigation {
@@ -35,6 +40,10 @@
 
     .navigation li a {
         color: white;
+    }
+
+    .selected {
+        background-color: aqua;
     }
 
     .navigation ul {
@@ -66,4 +75,13 @@
         margin-top: 1em;
     }
 
+    .hero p {
+        display:block;
+        grid-column: 1 /1;
+        grid-row: 1 / 1;
+        z-index: 1;
+        border: 1px solid gray;
+        border-radius: 1em;
+        margin-left: 1em;
+    }
 }

@@ -10,7 +10,29 @@ body {
 }
 
 header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: rgba(255,255,255,0.6);  
+    padding-bottom: 1em;
+    text-align: center;
+}
+
+#logo-text, #logo-description {
+    padding: 0px;
+    background: none;
+    align-items: center;
+    color: black;
+}
+
+#logo img{
+    /* display: block; */
+    max-width: 80px;
+    height: auto;
+    /* float: left; */
+    /* margin: 0 auto;
+    padding-top: 1em;
+    padding-left: 1em;    */
 }
 
 nav {
@@ -18,22 +40,19 @@ nav {
     max-width: 760px;
 }
 
-.navigation {
-    padding-inline-start: 0px;
-}
-
 nav li {
     display: none;
 }
 
-.navigation li:first-child {
-    display: block;
-}
 
 nav a {
     display: block;
     text-decoration: none;
     color: white;
+}
+
+nav ul {
+    margin: 0;
 }
 
 nav ul li {
@@ -50,26 +69,16 @@ nav ul li a:hover {
     color:#086788;
 }  
 
-.responsive li{
+.navigation {
+    padding-inline-start: 0px;
+}
+
+.navigation li:first-child {
     display: block;
 }
 
-#logo-text, #logo-description {
-    padding: 0px;
-}
-
-#logo-text {
-    text-align: center;
-    color: black;
-    background: none;
-    font-size: 2rem;;
-}
-
-#logo-description {
-    font-size: 1rem;
-    text-align: center;
-    background: none;
-    padding-bottom: 1rem;
+.responsive li{
+    display: block;
 }
 
 main .section {
@@ -102,14 +111,6 @@ main h2 {
     box-shadow: 3px 3px 10px ;
 }
 
-
-#logo img{
-    display: block;
-    max-width: 150px;
-    margin: 0 auto;
-    
-}
-
 main {
     width: 100%;
     margin: 0 auto;
@@ -120,6 +121,44 @@ main {
 
 main p, a {
     padding-left: 1em;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.hero img, p {
+    grid-row: 1 / 2;
+}
+
+.hero img {
+    grid-column: 1 / -1;
+    max-width: 100%;
+    min-width: 100%;
+}
+
+.hero p {
+    grid-row: auto;
+}
+
+/* .fiveDay {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+} */
+
+.fiveDay img, p {
+    grid-row: 1 / 2;
+}
+
+.fiveDay img {
+    grid-column: 1 / -1;
+    max-width: 100%;
+    min-width: 100%;
+}
+
+.fiveDay p {
+    grid-row: auto;
 }
 
 footer {
@@ -168,7 +207,7 @@ footer p {
 #color-schemes-4 {
     background-color: #f3de8a;
 }
-#olor-schemes-5 {
+#color-schemes-5 {
     background-color: #FFFFFF;
 }
 

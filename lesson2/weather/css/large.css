@@ -1,0 +1,20 @@
+@media only screen and (min-width:1367px){
+    nav a {
+        font-size: 1.5em;
+    }
+
+    body {
+        background-image: url("/lesson2/weather/images/summer.jpeg");
+        background-position: bottom;
+        font-size: 1.5rem;
+    }
+
+    #logo-text {
+        font-size: 5rem;
+    }
+    
+    #logo-description {
+        font-size: 3rem;
+    }
+
+}

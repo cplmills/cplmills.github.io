@@ -7,7 +7,9 @@
         <title>Chris Mills - WDD 230 Assignment Portal</title>
         <link rel="stylesheet" href="/lesson2/weather/css/small.css">
         <link rel="stylesheet" href="/lesson2/weather/css/medium.css">
-        <script src="/lesson2/weather/js/navigation.js"></script>
+        <link rel="stylesheet" href="/lesson2/weather/css/large.css">
+        <script src="/lesson2/weather/js/scripts.js"></script>
+        <script src="/lesson2/weather/js/lastModified.js"></script>
     </head>
 
     <body>
@@ -22,9 +24,9 @@
         </header>
         <nav>
             <ul class="navigation">
-                <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="#" onclick="toggleMenu('navigation', 'responsive');">&#9776; Menu</a></li>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Preston</a></li>
+                <li><a href="/lesson2/weather/preston.html">Preston</a></li>
                 <li><a href="#">Soda Springs</a></li>
                 <li><a href="#">Fish Haven</a></li>
                 <li><a href="#">Storm Center</a></li>
@@ -33,16 +35,18 @@
         </nav>
         <main>
             <h2>Preston Idaho</h2>
-            <div class="section">
+            <div class="hero section">
+                <!-- <img src="https://via.placeholder.com/1000x250" alt="Hero Image"> -->
                 <p>Hero w/ weather summary</p>
             </div>
-            <div class="section">
+            <div class="fiveDay section">
+                <!-- <img src="https://via.placeholder.com/800x250" alt="Image"> -->
                 <p>5 Day Forecast</p>
             </div>
-            <div class="section">
+            <div class="section article">
                 <p>Article</p>
             </div>
-            <div class="section">
+            <div class="section contact">
                 <p>Contact Information</p>
             </div>
             
@@ -53,8 +57,9 @@
                     <li>Chris Mills</li>
                 </ul>
                 <p id="lastModified">Date last modified here</p>
+                <script type="text/javascript">lastModified();</script>
             </footer>
         </main>
-        <script src="/lesson2/weather/js/lastModified.js"></script>
+        
     </body>
 </html>
