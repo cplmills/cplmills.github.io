@@ -138,11 +138,6 @@ main p, a {
     grid-row: auto;
 }
 
-/* .fiveDay {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-} */
-
 .fiveDay img, p {
     grid-row: 1 / 2;
 }
@@ -187,31 +182,4 @@ footer p {
     padding: 0;
     margin: 0;
     margin-bottom: 1em;
-}
-
-/* Colour scheme page css */
-#color-schemes-1 {
-    background-color: #086788;
-}
-
-#color-schemes-2 {
-    background-color: #07a0c3;
-}
-#color-schemes-3 {
-    background-color: #FE5F55;
-}
-#color-schemes-4 {
-    background-color: #f3de8a;
-}
-#color-schemes-5 {
-    background-color: #FFFFFF;
-}
-
-.tile {
-    border: 1px solid grey;
-    display: block;
-    width: calc(93% / 5);
-    float: left;
-    height: 100vh;
-    padding: 5px;
 }
