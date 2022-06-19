@@ -1,4 +1,4 @@
-@media only screen and (min-width:1367px){
+@media only screen and (min-width:1100px){
     nav a {
         font-size: 1.5em;
     }
@@ -17,4 +17,7 @@
         font-size: 3rem;
     }
 
+    nav li a {
+        font-size: 1em;
+    }
 }
