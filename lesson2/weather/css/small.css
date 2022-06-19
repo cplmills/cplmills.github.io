@@ -23,16 +23,12 @@ header {
     background: none;
     align-items: center;
     color: black;
+    padding-left: .5em;
 }
 
 #logo img{
-    /* display: block; */
     max-width: 80px;
     height: auto;
-    /* float: left; */
-    /* margin: 0 auto;
-    padding-top: 1em;
-    padding-left: 1em;    */
 }
 
 nav {

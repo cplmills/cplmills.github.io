@@ -20,4 +20,12 @@
     nav li a {
         font-size: 1em;
     }
+
+    #logo {
+        /* max-width: 180px; */
+        min-width: 180px;
+        border: 1px solid red;
+    }
+
+
 }
