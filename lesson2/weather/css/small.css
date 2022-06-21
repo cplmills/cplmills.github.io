@@ -9,12 +9,22 @@ body {
     margin: 0;
 }
 
+#alert-banner {
+    display: none;
+    background: linear-gradient(0deg, rgba(254,95,85,1) 0%, rgba(255,175,171,1) 53%, rgba(254,95,85,1) 100%);
+    padding: 0.1rem;
+    text-align: center;
+    box-shadow: 5px 5px 5px;
+    border-bottom: 2px solid white;
+}
+
 header {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: rgba(255,255,255,0.6);  
     padding-bottom: 1em;
+    padding-top: 1em;
     text-align: center;
 }
 
@@ -79,11 +89,11 @@ nav ul li a:hover {
 
 main .section {
     background-color: lightblue;
-    border: 1px dashed blue;
-    margin: 0.4em 0;
+    /* border: 1px dashed blue; */
+    /* margin: 0.4em 0; */
 }
 
-h1, h2 {
+h1, h2, h3 {
     margin: 0px;
     padding: 4px;
     /* font-size: calc(100% + 2vw); */
@@ -120,18 +130,56 @@ main p, a {
 }
 
 .hero {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
+    background-image: url("/lesson2/weather/images/preston-hero.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    min-height: 250px;
 }
 
-.hero img, p {
-    grid-row: 1 / 2;
+#weather-summary {
+    /* grid-column: 1 / 2;
+    grid-row: 1 / 2; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(1fr, 7);
+    
 }
+
+#weather-summary span {
+    padding-left: 1em;
+}
+
+#weather-summary h3 {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    border-bottom: 1px solid #086788;
+}
+
+#weather-summary .attribute {
+    font-weight: bolder;
+}
+
+#weather-summary span:nth-child(4n), span:nth-child(4n+1){
+    background-color: #086788;
+    color: white;
+}
+
+#weather-summary span:nth-last-child(-n+2) {
+    border-bottom: 1px solid #086788;
+    margin-bottom: 1em;
+}
+
+
 
 .hero img {
     grid-column: 1 / -1;
     max-width: 100%;
     min-width: 100%;
+    margin: 0 auto;
+    box-shadow: 5px 5px 5px;
 }
 
 .hero p {

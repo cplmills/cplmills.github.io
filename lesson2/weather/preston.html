@@ -13,6 +13,10 @@
     </head>
 
     <body>
+        <div id="alert-banner">
+            <p>Saturday = Preston Pancakes in the Park!
+            <br>9:00 a.m. Saturday at the city park.</p>
+        </div>
         <header>
             <div id="logo">
                 <img src="/lesson2/weather/images/weather-better-logo.png" alt="Weather Better Logo">
@@ -36,12 +40,19 @@
         <main>
             <h2>Preston Idaho</h2>
             <div class="hero section">
-                <!-- <img src="https://via.placeholder.com/1000x250" alt="Hero Image"> -->
-                <p>Hero w/ weather summary</p>
+                <!-- <img src="/lesson2/weather/images/preston-hero.jpg" alt="Hero Image"> -->
+            </div>
+            <div id="weather-summary">
+                <h3>Weather Summary</h3>
+                <span class="attribute">Currently:</span><span class="value"> Sunny</span>
+                <span class="attribute">High:</span><span class="value"> 76 &#176;F </span>
+                <span class="attribute">Wind Chill:</span><span class="value"> &#176;F</span>
+                <span class="attribute">Humidity:</span><span class="value"> 69%</span>
+                <span class="attribute">Wind Speed:</span><span class="value"> 5 mph</span>
             </div>
             <div class="fiveDay section">
                 <!-- <img src="https://via.placeholder.com/800x250" alt="Image"> -->
-                <p>5 Day Forecast</p>
+                <h3>5 Day Forecast</h3>
             </div>
             <div class="section article">
                 <p>Article</p>
@@ -57,7 +68,7 @@
                     <li>Chris Mills</li>
                 </ul>
                 <p id="lastModified">Date last modified here</p>
-                <script>lastModified();</script>
+                <script>lastModified(); displayBanner();</script>
             </footer>
         </main>
         
