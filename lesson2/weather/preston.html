@@ -42,7 +42,7 @@
             <div class="hero section">
                 <!-- <img src="/lesson2/weather/images/preston-hero.jpg" alt="Hero Image"> -->
             </div>
-            <div id="weather-summary">
+            <div class="weather-table">
                 <h3>Weather Summary</h3>
                 <span class="attribute">Currently:</span><span class="value"> Sunny</span>
                 <span class="attribute">High:</span><span class="value"> 76 &#176;F </span>
@@ -50,12 +50,37 @@
                 <span class="attribute">Humidity:</span><span class="value"> 69%</span>
                 <span class="attribute">Wind Speed:</span><span class="value"> 5 mph</span>
             </div>
-            <div class="fiveDay section">
-                <!-- <img src="https://via.placeholder.com/800x250" alt="Image"> -->
-                <h3>5 Day Forecast</h3>
+            <div class="fiveDay">
+                <div class="flex-col">
+                    <span class="forecast-head leftCorner">Monday</span>
+                    <img src="/lesson2/weather/images/sun_icon.png" alt="Sunshine">
+                    <span class="forecast-label">Sunny</span>
+                </div>
+                <div class="flex-col">
+                    <span class="forecast-head">Tuesday</span>
+                    <img src="/lesson2/weather/images/sun_icon.png" alt="Sunshine">
+                    <span class="forecast-label">Sunny</span>
+                </div>
+                <div class="flex-col">
+                    <span class="forecast-head">Wednesday</span>
+                    <img src="/lesson2/weather/images/sun_icon.png" alt="Sunshine">
+                    <span class="forecast-label">Sunny</span>
+                </div>
+                <div class="flex-col">
+                    <span class="forecast-head">Thursday</span>
+                    <img src="/lesson2/weather/images/sun_icon.png" alt="Sunshine">
+                    <span class="forecast-label">Sunny</span>
+                </div>
+                <div class="flex-col">
+                    <span class="forecast-head rightCorner">Friday</span>
+                    <img src="/lesson2/weather/images/sun_icon.png" alt="Sunshine">
+                    <span class="forecast-label">Sunny</span>
+                </div>
             </div>
             <div class="section article">
-                <p>Article</p>
+                <h3>Founders Day Fresco</h3>
+                <h4> By Chris Mills</h4>
+                <p>I was recently reflecting on the founders day event held at Foundation park each year. I have been taking the festical for granted and have not been properly engaging in perhaps the most popular community event of the year. In responce, I contacted Ms. Sharon by email and expressed my desire to serve on the event commitee. Well, you guessed it, the phone rings almost immediately and she promptly asks me to be the event commitee chair. Literally, good grief! My appreciation for the years of dedicated, generous service of volunteers and sponsors has escalated beyond what I thought I could feel for such a thing and ...</p><a href="#" target="_blank"> continue to full article</a>
             </div>
             <div class="section contact">
                 <p>Contact Information</p>
@@ -68,7 +93,11 @@
                     <li>Chris Mills</li>
                 </ul>
                 <p id="lastModified">Date last modified here</p>
-                <script>lastModified(); displayBanner();</script>
+                <script>
+                    lastModified();
+                    displayBanner();                     
+                    activeLink(); 
+                </script>
             </footer>
         </main>
         

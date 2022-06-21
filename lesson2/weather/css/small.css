@@ -93,12 +93,17 @@ main .section {
     /* margin: 0.4em 0; */
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     margin: 0px;
     padding: 4px;
     /* font-size: calc(100% + 2vw); */
     word-wrap:break-word;
     white-space: normal;
+}
+
+h4 {
+    color: #FCFCFC;
+    font-size: smaller;
 }
 
 h1 {
@@ -130,8 +135,6 @@ main p, a {
 }
 
 .hero {
-    /* display: grid;
-    grid-template-columns: 1fr 1fr; */
     background-image: url("/lesson2/weather/images/preston-hero.jpg");
     background-size:cover;
     background-position:center;
@@ -139,40 +142,41 @@ main p, a {
     min-height: 250px;
 }
 
-#weather-summary {
-    /* grid-column: 1 / 2;
-    grid-row: 1 / 2; */
+.weather-table {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(1fr, 7);
-    
 }
 
-#weather-summary span {
+.weather-table span {
     padding-left: 1em;
 }
 
-#weather-summary h3 {
+.weather-table h3 {
     grid-column: 1 / -1;
     grid-row: 1 / 2;
     border-bottom: 1px solid #086788;
+    border-bottom: 1px solid #086788;
 }
 
-#weather-summary .attribute {
+.weather-table .attribute {
     font-weight: bolder;
 }
 
-#weather-summary span:nth-child(4n), span:nth-child(4n+1){
+.weather-table span:nth-child(4n), span:nth-child(4n+1){
     background-color: #086788;
     color: white;
 }
 
-#weather-summary span:nth-last-child(-n+2) {
+.weather-table span:nth-last-child(-n+2) {
     border-bottom: 1px solid #086788;
     margin-bottom: 1em;
 }
 
-
+.forecast img {
+    grid-column: 1 / -1;
+    width: 100%;
+}
 
 .hero img {
     grid-column: 1 / -1;
@@ -186,18 +190,14 @@ main p, a {
     grid-row: auto;
 }
 
-.fiveDay img, p {
-    grid-row: 1 / 2;
+.fiveDay {
+    display: none;
 }
 
-.fiveDay img {
-    grid-column: 1 / -1;
-    max-width: 100%;
-    min-width: 100%;
-}
-
-.fiveDay p {
-    grid-row: auto;
+.article a {
+    display:block;
+    background: none;
+    padding-bottom: 1em;
 }
 
 footer {
@@ -230,4 +230,9 @@ footer p {
     padding: 0;
     margin: 0;
     margin-bottom: 1em;
+}
+
+
+.activeLink {
+    background-color: #07a0c3;
 }

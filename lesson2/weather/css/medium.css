@@ -84,4 +84,49 @@
         border-radius: 1em;
         margin-left: 1em;
     }
+
+    .flex-col {
+        flex: 1 1 auto;
+        text-align: center;
+        border-right: 1px solid #086788;
+    }
+
+    .flex-col:nth-last-child(1)  {
+        border-right: 0;
+    }
+
+    .flex-col img {
+        max-width: 60px;
+    }
+
+    .forecast-label {
+        display: block;
+        padding: 0 5px 5px;
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    .fiveDay {
+        display: flex;
+        flex-flow: row wrap;
+        border: 1px solid #086788;
+        border-radius: 0.5em;
+        margin: 1em;
+    }
+
+    .forecast-head {
+        display: block;
+        padding: 5px;
+        border-bottom: 1px solid #086788;
+        text-align: center;
+        background-color: #07a0c3;
+    }
+
+    .leftCorner {
+        border-top-left-radius: .5em;
+    }
+
+    .rightCorner {
+        border-top-right-radius: .5em;
+    }
 }

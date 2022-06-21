@@ -19,3 +19,13 @@ function displayBanner() {
     }
     console.log(dayOfWeek);
 }
+
+function activeLink() {
+    let page = 0;
+    for (var i = 0; i < document.links.length; i++) {
+        if (document.links[i].href === document.URL) {
+            page = i;
+        }
+    }
+document.links[page].className = 'activeLink';
+}
