@@ -89,14 +89,11 @@ nav ul li a:hover {
 
 main .section {
     background-color: lightblue;
-    /* border: 1px dashed blue; */
-    /* margin: 0.4em 0; */
 }
 
 h1, h2, h3, h4 {
     margin: 0px;
     padding: 4px;
-    /* font-size: calc(100% + 2vw); */
     word-wrap:break-word;
     white-space: normal;
 }
@@ -104,11 +101,16 @@ h1, h2, h3, h4 {
 h4 {
     color: #FCFCFC;
     font-size: smaller;
+    padding-left: 2em;
 }
 
 h1 {
     background-image: linear-gradient(to right, #086788, white); 
     color: white;       
+}
+
+h3 {
+    padding-left: 1em;
 }
 
 main h2 {
@@ -128,6 +130,7 @@ main {
     background-color: rgba(255,255,255,.8);
     height: 100%;
     border: 1px solid grey;
+    padding-bottom: 1em;
 }
 
 main p, a {
@@ -155,7 +158,6 @@ main p, a {
 .weather-table h3 {
     grid-column: 1 / -1;
     grid-row: 1 / 2;
-    border-bottom: 1px solid #086788;
     border-bottom: 1px solid #086788;
 }
 
@@ -194,14 +196,47 @@ main p, a {
     display: none;
 }
 
+.article {
+    width:86%;
+    margin: 0 auto;
+    border: 1px solid #086788;
+    border-radius: 1em;
+    padding: 0 1em;
+}
+
 .article a {
     display:block;
     background: none;
     padding-bottom: 1em;
 }
 
+.article img {
+    display: block;
+    max-width: 90%;
+    margin: 0 auto;
+    margin-bottom: 1em;
+}
+
+.contact {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding-left: 1em;
+    padding: 1em 0;
+}
+
+.contact img {
+    max-width: 90%;
+    margin: 0 1em;
+}
+
+.contact-info img {
+    max-width: 25px;
+}
+
 footer {
     display: block;
+    background-color: #086788;
+    color: white;
+    padding: .2em 0;
 }
 
 footer ul {
@@ -232,7 +267,10 @@ footer p {
     margin-bottom: 1em;
 }
 
-
 .activeLink {
     background-color: #07a0c3;
+}
+
+.socials {
+    display: none;
 }

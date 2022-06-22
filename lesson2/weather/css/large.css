@@ -25,5 +25,12 @@
         min-width: 180px;
     }
 
+    .contact img {
+        margin: 0 auto;
+        margin-right: 1em;
+    }
 
+    .contact-info img {
+        max-width: 50px;
+    }
 }
