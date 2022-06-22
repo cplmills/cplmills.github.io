@@ -148,7 +148,7 @@ main p, a {
 .weather-table {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(1fr, 7);
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 .weather-table span {
