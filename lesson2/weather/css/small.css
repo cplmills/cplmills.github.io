@@ -99,7 +99,7 @@ h1, h2, h3, h4 {
 }
 
 h4 {
-    color: #FCFCFC;
+    color: #086788;
     font-size: smaller;
     padding-left: 2em;
 }
@@ -148,7 +148,6 @@ main p, a {
 .weather-table {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 .weather-table span {
