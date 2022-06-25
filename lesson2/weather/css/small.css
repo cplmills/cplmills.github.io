@@ -197,7 +197,7 @@ main p, a {
     border: 1px solid #939696;
     border-radius: 1em;
     padding: 0 1em;
-    margin: 0 1em;
+    margin: 1em;
 }
 
 .article-text {
