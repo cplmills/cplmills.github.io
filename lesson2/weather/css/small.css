@@ -89,7 +89,7 @@ nav ul li a:hover {
 }
 
 main .section {
-    background-color: lightblue;
+    background-color: rgb(221, 240, 247);
 }
 
 h1, h2, h3, h4 {
@@ -194,7 +194,7 @@ main p, a {
 }
 
 .article {
-    border: 1px solid #086788;
+    border: 1px solid #939696;
     border-radius: 1em;
     padding: 0 1em;
     margin: 0 1em;
