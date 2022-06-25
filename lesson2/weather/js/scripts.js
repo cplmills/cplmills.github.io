@@ -4,7 +4,6 @@ function toggleMenu(element, css) {
 
 function toggleButton() {
     currentHTML = document.querySelector('#menuButton').innerHTML;
-    console.log(currentHTML);
     if (currentHTML.includes("🌂 Menu")) {
         document.querySelector('#menuButton a').innerHTML = "&#9730; Menu";
     } else {
@@ -17,7 +16,6 @@ function displayBanner() {
     if (dayOfWeek == 6) {
         document.querySelector('#alert-banner').style.display = "block";
     }
-    console.log(dayOfWeek);
 }
 
 function activeLink() {
@@ -27,5 +25,5 @@ function activeLink() {
             page = i;
         }
     }
-document.links[page].className = 'activeLink';
+    document.links[page].className = 'activeLink';
 }

@@ -138,21 +138,34 @@ main p, a {
     padding-left: 1em;
 }
 
-.hero {
-    background-image: url("/lesson2/weather/images/preston-hero.jpg");
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
-    min-height: 250px;
+.hero img {
+    max-width: 100%;
+    min-width: 100%;
+
+}
+
+.hero p {
+    grid-row: auto;
 }
 
 .weather-table {
     display: grid;
+    /* display: none; */
     grid-template-columns: 1fr 1fr;
 }
 
 .weather-table span {
     padding-left: 1em;
+}
+
+.weather-table .value span {
+    background: none;
+    color: inherit;
+}
+
+.weather-table .value {
+    text-align: right;
+    padding-right: 1em;
 }
 
 .weather-table h3 {
@@ -163,6 +176,7 @@ main p, a {
 
 .weather-table .attribute {
     font-weight: bolder;
+    padding: 3px;
 }
 
 .weather-table span:nth-child(4n), span:nth-child(4n+1){
@@ -170,26 +184,9 @@ main p, a {
     color: white;
 }
 
-.weather-table span:nth-last-child(-n+2) {
-    border-bottom: 1px solid #086788;
-    margin-bottom: 1em;
-}
-
 .forecast img {
     grid-column: 1 / -1;
     width: 100%;
-}
-
-.hero img {
-    grid-column: 1 / -1;
-    max-width: 100%;
-    min-width: 100%;
-    margin: 0 auto;
-    box-shadow: 5px 5px 5px;
-}
-
-.hero p {
-    grid-row: auto;
 }
 
 .fiveDay {
@@ -197,23 +194,28 @@ main p, a {
 }
 
 .article {
-    width:86%;
-    margin: 0 auto;
     border: 1px solid #086788;
     border-radius: 1em;
     padding: 0 1em;
+    margin: 0 1em;
+}
+
+.article-text {
+    display: block;
+    width: 100%;
+    
 }
 
 .article a {
     display:block;
     background: none;
-    padding-bottom: 1em;
+    padding: 1em 0;
 }
 
-.article img {
-    display: block;
-    max-width: 90%;
-    margin: 0 auto;
+.article-img img {
+    max-width: 50%;
+    float: right;
+    margin-left: 1em;
     margin-bottom: 1em;
 }
 

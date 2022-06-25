@@ -62,7 +62,7 @@
         list-style: none;
         justify-content: flex-start;
         box-shadow: 0 4px 1px -1px gray;
-
+        font-size: 0.9rem;
     }
 
     nav li a {
@@ -75,7 +75,7 @@
         margin-top: 1em;
     }
 
-    .hero-container {
+    .hero {
         position: relative;
     }
 
@@ -99,10 +99,10 @@
         margin-left: 1em;
     }
 
-    .hero {
+    /* .hero {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
+    } */
 
     .flex-col {
         flex: 1 1 auto;
@@ -154,12 +154,9 @@
         padding-left: 1em;
     }
 
-    .article-text {
-        max-width: 70%;
-    }
-
     .article-img {
         max-width: 100%;
+        float: right;
     }
 
     .contact {

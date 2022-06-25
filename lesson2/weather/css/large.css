@@ -1,10 +1,10 @@
-@media only screen and (min-width:1100px){
+@media only screen and (min-width:1160px){
     nav a {
         font-size: 1.5em;
     }
 
     body {
-        background-image: url("/lesson2/weather/images/summer.jpeg");
+        background-image: url("/lesson2/weather/images/summer_3000_2249.jpg");
         background-position: bottom;
         font-size: 1.5rem;
     }
@@ -17,12 +17,20 @@
         font-size: 3rem;
     }
 
+    nav {
+        font-size: 1.2rem;
+    }
+
     nav li a {
         font-size: 1em;
     }
 
     #logo {
         min-width: 180px;
+    }
+
+    .article-img img {
+        max-width: 30%;
     }
 
     .contact img {
