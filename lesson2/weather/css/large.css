@@ -30,7 +30,8 @@
     }
 
     .article-img img {
-        max-width: 30%;
+        max-width: 150%;
+        width: 40%;
     }
 
     .contact img {

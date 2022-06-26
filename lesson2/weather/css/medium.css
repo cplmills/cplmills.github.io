@@ -1,11 +1,4 @@
 @media only screen and (min-width:720px){
-    
-    header {
-        display: flex;
-        align-content: center;
-        justify-content: center;
-        align-items: center;
-    } 
 
     #logo-text {
         font-size: 3rem;
@@ -144,14 +137,17 @@
         border-top-right-radius: .5em;
     }
 
-    .article-inner {
+    /* .article-inner {
         display: flex;
         padding-left: 1em;
-    }
+    } */
 
-    .article-img {
-        max-width: 100%;
+    .article-img img {
+        /* max-width: 100%; */
         float: right;
+        margin-left: 1em;
+        margin-bottom: 1em;
+        width: 40%;
     }
 
     .contact {
