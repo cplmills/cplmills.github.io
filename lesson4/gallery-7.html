@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="/lesson4/css/medium.css">
         <link rel="stylesheet" href="/lesson4/css/large.css">
         <script src="/lesson2/weather/js/lastModified.js"></script>
+        <script src="/lesson2/weather/js/scripts.js"></script>
     </head>
 
     <body>
@@ -46,7 +47,7 @@
                         <picture>
                             <source srcset="https://via.placeholder.com/600x412" data-src="/lesson4/images/weather1-600-412.jpg" media="(min-width: 600px)">
                                 <img src="https://via.placeholder.com/300x206" data-src="/lesson4/images/weather1-300-206.jpg" alt="Sun rising over a green field">
-                            </picture>
+                        </picture>
                         <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
                     </figure>
                     <figure class="weather-image">
@@ -96,6 +97,7 @@
             <p id="lastModified">Date last modified here</p>
             <script>
                 lastModified();
+                activeLink();
             </script>
         </footer>
         <script src="/lesson4/js/image-scripts.js"></script>
