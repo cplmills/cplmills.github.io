@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap');
+
+body {
+    font-family: 'Merriweather Sans', sans-serif;
+    background-image: url("../../lesson2/weather/images/clouds.jpeg");
+    background-attachment: fixed;
+    background-size: cover;
+    font-size: 1rem;
+    margin: 0;
+}
+
+#alert-banner {
+    display: none;
+    background: linear-gradient(0deg, rgba(254,95,85,1) 0%, rgba(255,175,171,1) 53%, rgba(254,95,85,1) 100%);
+    padding: 0.1rem;
+    text-align: center;
+    box-shadow: 5px 5px 5px;
+    border-bottom: 2px solid white;
+}
+
+#header-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255,255,255,0.6);  
+    padding-bottom: 1em;
+    padding-top: 1em;
+    text-align: center;
+}
+
+#logo-text, #logo-description {
+    padding: 0px;
+    background: none;
+    align-items: center;
+    color: black;
+    padding-left: .5em;
+}
+
+#logo-text {
+    font-size: 2.5rem;
+}
+
+#logo img{
+    max-width: 80px;
+    height: auto;
+}
+
+nav {
+    background-color: #086788;
+    max-width: 760px;
+}
+
+nav li {
+    display: none;
+}
+
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav ul {
+    margin: 0;
+}
+
+nav ul li {
+    text-align: center;
+    border: 1px solid #086788;
+}
+
+nav ul li a {
+    padding: 0.5em;
+}
+
+nav ul li a:hover {
+    background-color: #FFFFFF;
+    color:#086788;
+}  
+
+.navigation {
+    padding-inline-start: 0px;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+.responsive li{
+    display: block;
+}
+
+main .section {
+    background-color: rgb(227, 244, 250);
+}
+
+h1, h2, h3, h4 {
+    margin: 0px;
+    padding: 4px;
+    word-wrap:break-word;
+    white-space: normal;
+}
+
+h4 {
+    color: #086788;
+    font-size: smaller;
+    padding-left: 2em;
+}
+
+h1 {
+    background-image: linear-gradient(to right, #086788, white); 
+    color: white;       
+}
+
+h3 {
+    padding-left: 1em;
+}
+
+main h2 {
+    background-image: linear-gradient(to right, #07a0c3, white)
+}
+
+.highlighted-text {
+    background-color: #FE5F55;
+    padding: 5px;
+    border: 1px solid black;
+    box-shadow: 3px 3px 10px ;
+}
+
+main {
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgba(255,255,255,.8);
+    height: 100%;
+    border: 1px solid grey;
+    padding-bottom: 1em;
+}
+
+main p, a {
+    padding-left: 1em;
+}
+
+#gallery-outer {
+    display: block;
+}
+
+figure {
+    padding: 0;
+    border: 1px solid grey;
+    box-shadow: 0px 0px 5px grey;
+    background: white;
+    border-radius: 5px;
+}
+
+figure img{
+    min-width: 100%;
+    max-width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+figure:hover {
+    box-shadow: 8px 8px 15px grey;
+}
+
+figcaption {
+    padding: 5px;
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+footer {
+    display: block;
+    background-color: #086788;
+    color: white;
+    padding: .2em 0;
+}
+
+footer ul {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+footer li {
+    font-size: 80%;
+    text-align: center;
+    display: inline-block;
+    flex: 1 1 100%;
+    padding: 5px;
+}
+
+footer li:nth-child(2){
+    border-left: 1px solid #086788;
+    border-right: 1px solid #086788;
+}
+
+footer p {
+    display: block;
+    text-align: center;
+    font-size: 80%;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 1em;
+}
+
+.activeLink {
+    background-color: #07a0c3;
+}
+
+.socials {
+    display: none;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-au">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Gallery of weather images.">
+        <title>Chris Mills - WDD 230 Gallery</title>
+        <link rel="stylesheet" href="/lesson4/css/small.css">
+        <link rel="stylesheet" href="/lesson4/css/medium.css">
+        <link rel="stylesheet" href="/lesson4/css/large.css">
+        <script src="/lesson2/weather/js/lastModified.js"></script>
+    </head>
+
+    <body>
+        <div id="alert-banner">
+            <p>Saturday = Preston Pancakes in the Park!
+            <br>9:00 a.m. Saturday at the city park.</p>
+        </div>
+        <header>
+            <section id="header-section">
+                <div id="logo">
+                    <img src="/lesson2/weather/images/weather-better-logo-min.png" alt="Weather Better Logo">
+                </div>
+                <div class="heading">
+                    <h1 id="logo-text">Weather Better</h1>
+                    <h2 id="logo-description">Doing weather... Better!</h2>
+                </div>
+            </section>
+            <nav>
+                <ul class="navigation">
+                    <li id="menuButton"><a href="#" onclick="toggleMenu('navigation', 'responsive'); toggleButton();">&#127746; Menu</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="/lesson2/weather/preston.html">Preston</a></li>
+                    <li><a href="#">Soda Springs</a></li>
+                    <li><a href="#">Fish Haven</a></li>
+                    <li><a href="#">Storm Center</a></li>
+                    <li><a href="#">Gallery</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Weather Gallery</h1>
+            <div id="gallery-outer" class="section">
+                <div id="gallery-inner">
+                    <figure class="weather-image">
+                        <picture>
+                            <source srcset="https://via.placeholder.com/600x412" data-src="/lesson4/images/weather1-600-412.jpg" media="(min-width: 600px)">
+                                <img src="https://via.placeholder.com/300x206" data-src="/lesson4/images/weather1-300-206.jpg" alt="Sun rising over a green field">
+                            </picture>
+                        <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+                    </figure>
+                    <figure class="weather-image">
+                        <picture>
+                            <source srcset="https://via.placeholder.com/600x412" data-src="/lesson4/images/weather2-600-412.jpg" media="(min-width: 600px)">
+                                <img src="https://via.placeholder.com/300x206" data-src="/lesson4/images/weather2-300-206.jpg" alt="Sun rising over a green field">
+                        </picture>
+                        <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+                    </figure>
+                    <figure class="weather-image">
+                        <picture>
+                            <source srcset="https://via.placeholder.com/600x412" data-src="/lesson4/images/weather3-600-412.jpg" media="(min-width: 600px)">
+                                <img src="https://via.placeholder.com/300x206" data-src="/lesson4/images/weather3-300-206.jpg" alt="Sun rising over a green field">
+                        </picture>
+                        <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+                    </figure>
+                    <figure class="weather-image">
+                        <picture>
+                            <source srcset="https://via.placeholder.com/600x412" data-src="/lesson4/images/weather4-600-412.jpg" media="(min-width: 600px)">
+                                <img src="https://via.placeholder.com/300x206" data-src="/lesson4/images/weather4-300-206.jpg" alt="Sun rising over a green field">
+                        </picture>
+                        <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+                    </figure>
+                    <figure class="weather-image">
+                        <picture>
+                            <source srcset="https://via.placeholder.com/600x412" data-src="/lesson4/images/weather5-600-412.jpg" media="(min-width: 600px)">
+                                <img src="https://via.placeholder.com/300x206" data-src="/lesson4/images/weather5-300-206.jpg" alt="Sun rising over a green field">
+                        </picture>
+                        <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+                    </figure>
+                    <figure class="weather-image">
+                        <picture>
+                            <source srcset="https://via.placeholder.com/600x412" data-src="/lesson4/images/weather6-600-412.jpg" media="(min-width: 600px)">
+                                <img src="https://via.placeholder.com/300x206" data-src="/lesson4/images/weather6-300-206.jpg" alt="Sun rising over a green field">
+                        </picture>
+                        <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <ul>
+                <li>Weather Better</li>
+                <li>Attributions</li>
+                <li>Chris Mills</li>
+            </ul>
+            <p id="lastModified">Date last modified here</p>
+            <script>
+                lastModified();
+            </script>
+        </footer>
+        <script src="/lesson4/js/image-scripts.js"></script>
+
+    </body>
+</html>
