@@ -2,7 +2,7 @@
 let imagesToLoad = document.querySelectorAll('img[data-src]');
 let srcToLoad = document.querySelectorAll('source[data-src]');
 let options = {
-    threshold: .25
+    threshold: .25 
 }
 
 const loadImages = (image) => {
@@ -15,6 +15,10 @@ const loadImages = (image) => {
 const loadSrcSet = (srcset) => {
     srcset.setAttribute('srcset', srcset.getAttribute('data-src'));
     srcset.removeAttribute('data-src');
+    console.log(srcset.parentNode);
+    srcset.parentNode.removeAttribute('class');
+    console.log(srcset.parentNode);
+
 };
 
 if('IntersectionObserver' in window) {
