@@ -247,6 +247,20 @@ form label, form div {
     font-size: .8rem;
 }
 
+.storm_severity_section {
+    border: 1px solid #999;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 1rem 0;
+    width: 100%;
+    max-width: 20rem;
+}
+
+form label.storm_details, label.output {
+    padding: 0;
+    margin: 0;
+}
+
 form label.your_details input, select, form label.your_details select, form label.storm_details input[type="date"], form label.additional_info textarea {
     -webkit-appearance: none;
     display: block;
@@ -309,10 +323,6 @@ input[type="radio"] {
     transform: scale(1.5);
     padding: 1rem;
     margin-right: 1rem;
-}
-
-label:last-child {
-    margin-bottom: 1rem;
 }
 
 #fs_additional p {

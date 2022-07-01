@@ -27,3 +27,10 @@ function activeLink() {
     }
     document.links[page].className = 'activeLink';
 }
+
+function updateSlider(){
+    tagName = document.querySelector("output");
+    value = document.querySelector("#storm_severity").value;
+    console.log("tag:" + tagName + ' - value: ' + value);
+    tagName.innerHTML = value;
+}

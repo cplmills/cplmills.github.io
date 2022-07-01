@@ -46,4 +46,9 @@
         width: 100%;
         max-width: 30.5rem;
     }
+
+    .storm_severity_section {
+        max-width: 29rem;
+        padding-right: 14px;
+    }
 }
