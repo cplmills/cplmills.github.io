@@ -34,4 +34,16 @@
         grid-template-columns: repeat(3 , 1fr);
     }
 
+    /* FORMS */
+
+    form label.your_details input, form label.your_details select, form .storm_details select, form label.storm_details input, form label.additional_info textarea {        padding: .4rem 0;
+        /* padding: 0.4rem; */
+        max-width: 30rem;
+        padding-left: .4rem;
+    }
+
+    #storm_region {
+        width: 100%;
+        max-width: 30.5rem;
+    }
 }

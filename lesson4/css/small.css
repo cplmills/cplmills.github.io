@@ -118,6 +118,11 @@ h3 {
     padding-left: 1em;
 }
 
+a {
+    text-decoration: none;
+    color: #086788;
+}
+
 main h2 {
     background-image: linear-gradient(to right, #07a0c3, white)
 }
@@ -198,8 +203,9 @@ footer li {
 }
 
 footer li:nth-child(2){
-    border-left: 1px solid #086788;
-    border-right: 1px solid #086788;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    padding: 0 1rem;
 }
 
 footer p {
@@ -217,4 +223,113 @@ footer p {
 
 .socials {
     display: none;
+}
+
+
+/* ---------------- FORMS ---------------------- */
+form fieldset {
+    margin: 2rem 2rem;
+    border: 1px solid #445ba9;
+    border-radius: 10px;
+    padding: 0.5rem 2%;
+}
+
+form legend {
+    color: #445ba9;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+
+form label, form div {
+    display: block;
+    padding-top: 1rem;
+    color: #086788;
+    font-size: .8rem;
+}
+
+form label.your_details input, select, form label.your_details select, form label.storm_details input[type="date"], form label.additional_info textarea {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: 1px solid #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 85%;
+    max-width: 20rem;
+    background-color: rgba(0,0,0,0.1);
+}
+
+/* form label.storm_details input[list="storm_type"] { */
+#storm_region {
+    width: 100%;
+    max-width: 22rem;
+}
+
+form input[type="range"] {
+    display: block;
+    width: 100%;
+    max-width: 21rem;
+}
+
+form label.additional_info textarea {
+    height: 8rem;
+    max-height: 20rem;
+}
+
+form label.your_details input {
+    border-left: 6px solid rgba(0,0,0,0.1);
+}
+
+form label.your_details input:required {
+    border-left: 6px solid red;
+}
+
+form label.your_details input:required:valid {
+    border-left: 6px  solid green;
+}
+
+form p {
+    padding: 0;
+    margin: 0;
+}
+
+.additional_radio {
+    font-size: 1rem;
+}
+
+.additional_radio {
+    padding-top: 0;
+    padding-bottom: 1rem;
+}
+
+input[type="radio"] {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Chrome, Safari, Opera */
+    transform: scale(1.5);
+    padding: 1rem;
+    margin-right: 1rem;
+}
+
+label:last-child {
+    margin-bottom: 1rem;
+}
+
+#fs_additional p {
+    padding: 0.2rem;
+    margin: 0;
+}
+
+#submitBtn {
+    font-size: 1rem;
+    padding: .75rem;
+    border-color: #999;
+    border-radius: 10px;
+    background-color: #086788;
+    color: white;
+    margin-left: 2rem;
+}
+
+.thanks {
+    text-align: center;
 }
