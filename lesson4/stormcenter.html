@@ -63,9 +63,9 @@
                         <label class="storm_details">Storm Severity<input type="range" id="storm_severity" name="storm_severity" min="0" max="10" onchange="updateSlider()"></label>
                         <label class="output">You Selected: <output>5</output></label>
                     </div>
-                    <label class="storm_details"><p>Storm Region:</p>
+                    <label class="storm_details">Storm Region:
                         <select name="storm_region" id="storm_region">
-                            <option value="" selected="true" disabled>Select Region... &#9662</option>
+                            <option value="" selected disabled>Select Region... &#9662;</option>
                             <option value="Fish Haven">Fish Haven</option>
                             <option value="Preston">Preston</option>
                             <option value="Soda Springs">Soda Springs</option>
@@ -74,11 +74,10 @@
                 </fieldset>
                 <fieldset id="fs_additional">
                     <legend>Additional Information</legend>
-                    <label class="additional"><p>Are You In Danger</p></label>
-                        <label class="additional_radio"><input type="radio" name="user_in_danger" id="user_in_danger" value="Yes"> Yes</label>
-                        <label class="additional_radio"><input type="radio" name="user_in_danger" id="user_in_danger" value="Maybe"> Maybe</label>
-                        <label class="additional_radio"><input type="radio" name="user_in_danger" id="user_in_danger" value="No"> No</label>
-                    </label>
+                    <label class="additional">Are You In Danger</label>
+                        <label class="additional_radio"><input type="radio" name="user_in_danger" class="user_in_danger" value="Yes"> Yes</label>
+                        <label class="additional_radio"><input type="radio" name="user_in_danger" class="user_in_danger" value="Maybe"> Maybe</label>
+                        <label class="additional_radio"><input type="radio" name="user_in_danger" class="user_in_danger" value="No"> No</label>
                     <label class="additional_info">Additional Information<textarea rows="6" name="additional" id="additional"></textarea></label>
                 </fieldset>
                 <input type="submit" value="Report Storm" id="submitBtn">
