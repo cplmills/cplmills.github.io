@@ -1,0 +1,39 @@
+.cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+}
+
+section {
+    display: block;
+    border: 1px solid #999;
+    border-radius: 10px;
+    text-align: center;
+    padding: 1rem;
+    background-color: #d0e9fd;
+}
+
+img {
+    width: 70%;
+    margin: 0 auto;
+    box-shadow: 5px 10px 10px #888;
+    border: 1px solid black;
+    padding: 8px;
+    background: white;
+}
+
+h2 {
+    text-shadow: 3px 3px 3px #888;
+}
+
+@media only screen and (min-width:600px){
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (min-width:1200px){
+    .cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
