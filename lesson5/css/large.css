@@ -106,7 +106,15 @@
         text-align: center;
         background-color: none;
         padding: 0;
-        
+    }
+
+    .town-info:nth-child(even) img{
+        justify-self: inherit;
+    }
+    
+    .town-info:nth-child(even) .town-stats {
+        grid-column: 1 / -1;
+        grid-row: 3 / 4;
     }
 
     .town-stats {

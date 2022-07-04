@@ -152,6 +152,15 @@
         overflow: auto;
         grid-column: 1 / -1;
     }
+
+    .town-info:nth-child(even) img{
+        justify-self: right;
+    }
+    
+    .town-info:nth-child(even) .town-stats {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
     
     .town-banner img {
         display: none;
@@ -159,8 +168,9 @@
 
     .block-img {
         display: block;
+        padding-top: 1rem;
     }
-    
+
     .town-banner-content {
         display: block;
         position: relative;
@@ -194,7 +204,7 @@
     }
 
     .wiki-info {
-        grid-column: 1 / -1;
+        grid-column: 1 / 3;
         grid-row: 3 / 4;
         border-top: 1px solid #999;
     }
