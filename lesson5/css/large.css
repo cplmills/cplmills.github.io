@@ -1,0 +1,138 @@
+@media only screen and (min-width:1200px){
+    nav a {
+        font-size: 1.5em;
+    }
+
+    body {
+        background-image: url("/lesson2/weather/images/summer_3000_2249.jpg");
+        background-position: bottom;
+        font-size: 1.5rem;
+    }
+
+    #logo-text {
+        font-size: 5rem;
+    }
+    
+    #logo-description {
+        font-size: 3rem;
+    }
+
+    nav {
+        font-size: 1.2rem;
+    }
+
+    nav li a {
+        font-size: 1em;
+    }
+
+    #logo {
+        min-width: 180px;
+    }
+
+
+    .contact img {
+        margin: 0 auto;
+        margin-right: 1em;
+    }
+
+    .contact-info img {
+        max-width: 50px;
+    }
+
+    .socials img {
+        max-width: 60px;
+    }
+
+    /* TOWN INFORMATION TILES */
+
+    .large-display {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        margin: 1rem;
+    }
+
+    .town-info:nth-child(1) {
+        grid-column: 1 / 2;
+    }
+
+    .town-info:nth-child(2) {
+        grid-column: 2 / 3;
+    }
+
+    .town-info:nth-child(3) {
+        grid-column: 3 / 4;
+    }
+
+    .town-info {
+        background-color: rgba(255, 255, 255, 0.6);
+        padding-bottom: 1rem;
+        border: none;
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        margin-bottom: 1rem;
+        border: 1px solid #9999;
+        border-radius: 10px;
+        
+    }
+
+    .town-banner {
+        border: none;
+        position: relative;
+        overflow: auto;
+        grid-column: 1 / -1;
+    }
+
+    .town-banner img {
+        display: none;
+    }
+
+    .block-img {
+        display: block;
+        grid-column: 1 / -1;
+        margin: 0 auto;
+    }
+
+    .town-banner-content {
+        display: block;
+        position: relative;
+        width: 100%;
+    }
+
+    .town-banner-content p {
+        margin: 0 auto;
+        text-align: center;
+        background-color: none;
+        padding: 0;
+        
+    }
+
+    .town-stats {
+        grid-column: 1 / -1;
+        grid-row: 3 / 4;
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .town-stats p {
+        padding-left: 0;
+
+    }
+
+    .town-banner-content p:nth-child(1){
+        font-size: 3rem;
+    }
+
+    .town-banner-content p:nth-child(2){
+        font-size: 1.5rem;
+    }
+
+    .wiki-info {
+        grid-column: 1 / -1;
+        grid-row: 4 / 5;
+        border-top: 1px solid #999;
+    }
+
+}

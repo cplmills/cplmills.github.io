@@ -51,4 +51,18 @@
         max-width: 29rem;
         padding-right: 14px;
     }
+
+
+    .contact img {
+        margin: 0 auto;
+        margin-right: 1em;
+    }
+
+    .contact-info img {
+        max-width: 50px;
+    }
+
+    .socials img {
+        max-width: 60px;
+    }
 }

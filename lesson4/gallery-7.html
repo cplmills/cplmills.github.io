@@ -26,7 +26,7 @@
             <nav>
                 <ul class="navigation">
                     <li id="menuButton"><a href="#" onclick="toggleMenu('navigation', 'responsive'); toggleButton();">&#127746; Menu</a></li>
-                    <li><a href="#">Home</a></li>
+                    <li><a href="/lesson5/index.html">Home</a></li>                    
                     <li><a href="/lesson2/weather/preston.html">Preston</a></li>
                     <li><a href="#">Soda Springs</a></li>
                     <li><a href="#">Fish Haven</a></li>
@@ -84,6 +84,22 @@
                 </div>
             </div>
         </main>
+        <div class="section contact">
+            <h3>Contact Information</h3>
+            <div class="contact-info">
+                <p><img src="/lesson2/weather/images/email-icon.png" alt = "Envelope icon"> admin@themillsclan.com</span></p>
+                <p><img src="/lesson2/weather/images/phone-icon.png" alt="Phone icon"> +61 (403) 444 555</p>
+                <p><img src="/lesson2/weather/images/location.png" alt="Location icon">31 Pine Creek Rd, Queensland, 4213</span></p>
+            </div>
+            <div class="socials">
+                <a href="#"><img src="/lesson2/weather/images/Pinterest-Icon.png" alt="Pinterest Logo"></a>
+                <a href="#"><img src="/lesson2/weather/images/Twitter-Icon.png" alt="Twitter Logo"></a>
+                <a href="#"><img src="/lesson2/weather/images/Instagram-Icon.png" alt="Instagram Logo"></a>
+                <a href="#"><img src="/lesson2/weather/images/Facebook-Icon.png" alt="Facebook Logo"></a>
+            </div>
+            <img src="https://via.placeholder.com/760x400" data-src="/lesson2/weather/images/map.jpg" id="map" alt="Location Map">
+        </div>
+        
         <footer>
             <ul>
                 <li>Weather Better</li>
@@ -93,10 +109,12 @@
             <p id="lastModified">Date last modified here</p>
             <script>
                 lastModified();
+                displayBanner();                     
                 activeLink();
+                showWindChill(); 
             </script>
+            <script src="/lesson4/js/image-scripts.js"></script>
         </footer>
-        <script src="/lesson4/js/image-scripts.js"></script>
 
     </body>
 </html>

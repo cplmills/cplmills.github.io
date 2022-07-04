@@ -1,0 +1,46 @@
+.inner-container {
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    max-height: 17rem;
+    height: 100%;
+    width: 100%;
+}
+  
+  .outer-container {
+    background-image: url(https://picsum.photos/id/1080/6858/4574), linear-gradient(rgb(219, 166, 166), rgb(0, 0, 172));
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+.tile {
+    border: 1px solid #999;
+    border-radius: 10px;
+    background-image: url(https://picsum.photos/id/1080/6858/4574), linear-gradient(rgb(219, 166, 166), rgb(0, 0, 172));
+    background-size: 100%;
+    background-position: bottom;
+    overflow: auto;
+}
+
+.leftSide, .rightSide {
+    display: block;
+    backdrop-filter: blur(5px);
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.rightSide {
+    z-index: 9999;
+    float: right;
+}
+
+.leftSide {
+    float: left;
+}
+
+.rightSide img {
+    max-width: 20rem;
+}

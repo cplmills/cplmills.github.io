@@ -181,6 +181,10 @@ figcaption {
     z-index: 1;
 }
 
+#map {
+    width: 100%;
+}
+
 footer {
     display: block;
     background-color: #086788;
@@ -342,4 +346,64 @@ input[type="radio"] {
 
 .thanks {
     text-align: center;
+}
+
+
+.contact {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding-left: 1em;
+    padding: 1em 0;
+}
+
+.contact img {
+    max-width: 90%;
+    margin: 0 1em;
+}
+
+.contact-info img {
+    max-width: 25px;
+}
+
+
+footer {
+    display: block;
+    background-color: #086788;
+    color: white;
+    padding: .2em 0;
+}
+
+footer ul {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+footer li {
+    font-size: 80%;
+    text-align: center;
+    display: inline-block;
+    flex: 1 1 100%;
+    padding: 5px;
+}
+
+footer li:nth-child(2){
+    border-left: 1px solid #086788;
+    border-right: 1px solid #086788;
+}
+
+footer p {
+    display: block;
+    text-align: center;
+    font-size: 80%;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 1em;
+}
+
+.activeLink {
+    background-color: #07a0c3;
+}
+
+.socials {
+    display: none;
 }

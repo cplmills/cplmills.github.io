@@ -68,26 +68,6 @@
         margin-top: 1em;
     }
 
-    #gallery-inner {
-        display: grid;
-        grid-template-columns: repeat(2 , 1fr);
-    }
-
-    #gallery-inner img {
-        width: 100%;  
-    }
-
-    figure {
-        margin: 1em;
-    }
-
-    .thanks {
-        height: 30vw;
-        padding: 1rem;
-        text-align: center;
-        font-size: 1.4rem;
-    }
-
     .contact {
         margin-top: 1em;
         display: grid;
@@ -126,6 +106,97 @@
 
     .socials img {
         max-width: 45px;
+    }
+
+    /* START INDIVIDUAL PAGES HERE */
+
+    .content figure {
+        float: left;
+        margin: 1rem;
+        padding: 0;
+    }
+
+    .content figcaption {
+        font-size: .7rem;
+    }
+
+    .content {
+        display: block;
+        font-size: .8rem;
+        overflow: auto;
+    }
+
+    .content img {
+        float: left;
+        padding: 1rem;
+        padding-bottom: 0;
+    }
+        
+/* TOWN INFORMATION TILES */
+
+    .town-info {
+        background-color: rgba(255, 255, 255, 0.6);
+        padding-bottom: 1rem;
+        border: none;
+        overflow: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        margin-bottom: 1rem;
+
+    }
+    
+    .town-banner {
+        border: none;
+        position: relative;
+        overflow: auto;
+        grid-column: 1 / -1;
+    }
+    
+    .town-banner img {
+        display: none;
+    }
+
+    .block-img {
+        display: block;
+    }
+    
+    .town-banner-content {
+        display: block;
+        position: relative;
+        width: 100%;
+    }
+    
+    .town-banner-content p {
+        margin: 0 auto;
+        text-align: center;
+        background-color: none;
+        padding: 0;
+        
+    }
+    
+    .town-stats {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .town-stats p {
+        padding-left: 0;
+
+    }
+
+    .town-banner-content p:nth-child(1){
+        font-size: 3rem;
+    }
+    
+    .town-banner-content p:nth-child(2){
+        font-size: 1.5rem;
+    }
+
+    .wiki-info {
+        grid-column: 1 / -1;
+        grid-row: 3 / 4;
+        border-top: 1px solid #999;
     }
 
 }
