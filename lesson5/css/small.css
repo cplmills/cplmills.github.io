@@ -2,7 +2,7 @@
 
 body {
     font-family: 'Merriweather Sans', sans-serif;
-    background-image: url("../../lesson2/weather/images/clouds.webp");
+    background-image: url("/lesson2/images/clouds.webp");
     background-attachment: fixed;
     background-size: cover;
     font-size: 1rem;
