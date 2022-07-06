@@ -5,6 +5,7 @@ function calcWindChill(t, s){
 function showWindChill(){
     let speed = document.querySelector('#windspeed').innerHTML;
     let temp  = document.querySelector('#temperature').innerHTML;
+    console.log("speed:"+speed+" - temp: "+temp);
     if (temp >= 50 && speed >= 3){
         document.querySelector('#windchill').innerHTML = Math.round(calcWindChill(temp, speed));
     } else {

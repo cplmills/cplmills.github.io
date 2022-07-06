@@ -68,6 +68,16 @@
         margin-top: 1em;
     }
 
+    .weather-table {
+        position: absolute;
+        top: 4em;
+        left: 10px;
+        background-color: rgba(255,255,255, 0.6);
+        border: 1px solid #086788;
+        border-radius: 1em;
+        max-height: 90%;
+    }
+
     .contact {
         margin-top: 1em;
         display: grid;

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-au">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Weather information for the town of Preston, Idaho, including local community events and gatherings.">
+        <title>Chris Mills - WDD 230 Preston Town Page</title>
+        <link rel="stylesheet" href="/lesson2/weather/css/small.css">
+        <link rel="stylesheet" href="/lesson2/weather/css/medium.css">
+        <link rel="stylesheet" href="/lesson2/weather/css/large.css">
+        <script src="/lesson2/weather/js/scripts.js"></script>
+        <script src="/lesson2/weather/js/lastModified.js"></script>
+    </head>
+
+    <body>
+        <div id="alert-banner">
+            <p>Saturday = Preston Pancakes in the Park!
+            <br>9:00 a.m. Saturday at the city park.</p>
+        </div>
+        <header>
+            <section id="header-section">
+                <div id="logo">
+                    <img src="/lesson2/weather/images/weather-better-logo-min.png" alt="Weather Better Logo">
+                </div>
+                <div class="heading">
+                    <h1 id="logo-text">Weather Better</h1>
+                    <h2 id="logo-description">Doing weather... Better!</h2>
+                </div>
+            </section>
+            <nav>
+                <ul class="navigation">
+                    <li id="menuButton"><a href="#" onclick="toggleMenu('navigation', 'responsive'); toggleButton();">&#127746; Menu</a></li>
+                    <li><a href="/lesson5/index.html">Home</a></li>                    
+                    <li><a href="/lesson2/weather/preston.html">Preston</a></li>
+                    <li><a href="#">Soda Springs</a></li>
+                    <li><a href="#">Fish Haven</a></li>
+                    <li><a href="/lesson4/stormcenter.html">Storm Center</a></li>
+                    <li><a href="/lesson4/gallery-7.html">Gallery</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2>Preston Idaho</h2>
+            <div class="hero">
+                <picture class="heroImage">
+                    <source srcset="/lesson2/weather/images/hero_600_291.jpg" media="(min-width: 300px) and (max-width: 600px)">
+                            <source srcset="/lesson2/weather/images/hero_800_388.jpg" media="(min-width: 601px) and (max-width: 800px)">
+                            <source srcset="/lesson2/weather/images/hero_1200_582.jpg" media="(min-width: 801px)">
+                            <img src="/lesson2/weather/images/hero_300_146.jpg" alt="Sun rising over a green field">
+                </picture>
+                <div class="weather-table">
+                    <h3>Weather Summary</h3>
+                    <span class="attribute">Currently:</span> <span class="value"><span id="currently"></span></span>
+                    <span class="attribute">High:</span>      <span class="value"><span id="temperature"></span>&#176;F</span>
+                    <span class="attribute">Wind Chill:</span><span class="value"><span id="windchill"></span>&#176;F</span>
+                    <span class="attribute">Humidity:</span>  <span class="value" id="humidity"></span>
+                    <span class="attribute">Wind Speed:</span><span class="value"><span id="windspeed"></span>mph</span>
+                </div>
+            </div>
+            <div class="fiveDay">
+                <div class="flex-col">
+                    <span class="forecast-head leftCorner">Monday</span>
+                    <img src="/lesson2/weather/images/sun_icon.png" alt="Sunshine">
+                    <span class="forecast-label">Sunny</span>
+                </div>
+                <div class="flex-col">
+                    <span class="forecast-head">Tuesday</span>
+                    <img src="/lesson2/weather/images/sun_icon.png" alt="Sunshine">
+                    <span class="forecast-label">Sunny</span>
+                </div>
+                <div class="flex-col">
+                    <span class="forecast-head">Wednesday</span>
+                    <img src="/lesson2/weather/images/sun_icon.png" alt="Sunshine">
+                    <span class="forecast-label">Sunny</span>
+                </div>
+                <div class="flex-col">
+                    <span class="forecast-head">Thursday</span>
+                    <img src="/lesson2/weather/images/sun_icon.png" alt="Sunshine">
+                    <span class="forecast-label">Sunny</span>
+                </div>
+                <div class="flex-col">
+                    <span class="forecast-head rightCorner">Friday</span>
+                    <img src="/lesson2/weather/images/sun_icon.png" alt="Sunshine">
+                    <span class="forecast-label">Sunny</span>
+                </div>
+            </div>
+            <div class="section article">
+                <h3>Founders Day Fresco</h3>
+                <h4> By Chris Mills</h4>
+                <div class="article-inner">
+                    <div class="article-img">
+                        <picture>
+                            <source srcset="/lesson2/weather/images/fun_600_450.jpg" media="(min-width: 1160px)">
+                            <!-- <source srcset="/lesson2/weather/images/fun_800_600.jpg" media="(min-width: 800px)"> -->
+                            <img src="/lesson2/weather/images/fun_300_225.jpg" alt="Child having fun at the fair">
+                        </picture>
+                        <div class="article-text">I was recently reflecting on the founders day event held at Foundation park each year. I have been taking the festical for granted and have not been properly engaging in perhaps the most popular community event of the year. In responce, I contacted Ms. Sharon by email and expressed my desire to serve on the event commitee. Well, you guessed it, the phone rings almost immediately and she promptly asks me to be the event commitee chair. Literally, good grief! My appreciation for the years of dedicated, generous service of volunteers and sponsors has escalated beyond what I thought I could feel for such a thing and ...<a href="#" target="_blank"> continue to full article</a></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="section contact">
+            <h3>Contact Information</h3>
+            <div class="contact-info">
+                <p><img src="/lesson2/weather/images/email-icon.png" alt = "Envelope icon"> admin@themillsclan.com</span></p>
+                <p><img src="/lesson2/weather/images/phone-icon.png" alt="Phone icon"> +61 (403) 444 555</p>
+                <p><img src="/lesson2/weather/images/location.png" alt="Location icon">31 Pine Creek Rd, Queensland, 4213</span></p>
+            </div>
+            <div class="socials">
+                <a href="#"><img src="/lesson2/weather/images/Pinterest-Icon.png" alt="Pinterest Logo"></a>
+                <a href="#"><img src="/lesson2/weather/images/Twitter-Icon.png" alt="Twitter Logo"></a>
+                <a href="#"><img src="/lesson2/weather/images/Instagram-Icon.png" alt="Instagram Logo"></a>
+                <a href="#"><img src="/lesson2/weather/images/Facebook-Icon.png" alt="Facebook Logo"></a>
+            </div>
+            <img src="https://via.placeholder.com/760x400" data-src="/lesson2/weather/images/map.jpg" id="map" alt="Location Map">
+        </div>
+        
+        <footer>
+            <ul>
+                <li><a href="/lesson5/index.html">Weather Better</a></li>
+                <li>Attributions</li>
+                <li>Chris Mills</li>
+                <li><a href="/lesson5/wireframes.html">Wireframes</a></li>
+
+            </ul>
+            <p id="lastModified">Date last modified here</p>
+            <script>
+                lastModified();
+                displayBanner();                     
+                activeLink();
+            </script>
+            <script src="/lesson4/js/image-scripts.js"></script>
+            <script src="/lesson10/js/weatherapi.js"></script>
+        </footer>
+        
+    </body>
+</html>
