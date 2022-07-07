@@ -11,7 +11,8 @@ fetch(apiURL)
     const desc = jsObject.list[0].weather.description;  // note how we reference the weather array
     const humidity = jsObject.list[0].main.humidity;
     const temp = jsObject.list[0].main.temp;
-    const tags = document.getElementsByClassName("dayOfWeek")
+    const tags = document.getElementsByClassName("dayOfWeek");
+    const labeltags = document.getElementsByClassName("forecast-label");
     document.getElementById("currently").innerHTML = currentWeather;
     document.getElementById("temperature").textContent = temp;
     document.getElementById("humidity").textContent = humidity+"%";
@@ -25,6 +26,7 @@ fetch(apiURL)
         console.log(day);
         dayIcon = "https://openweathermap.org/img/wn/" + entry.weather[0].icon + "@2x.png";
         tags[day].setAttribute('src', dayIcon);
+        labeltags[day].innerHTML = entry.weather[0].description;
         day += 1;
       }
     });
