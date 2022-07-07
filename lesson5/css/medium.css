@@ -199,9 +199,8 @@
         text-align: center;
     }
 
-    .town-stats p {
+    .town-stats p:nth-child(1) {
         padding-left: 0;
-
     }
 
     .town-banner-content p:nth-child(1){

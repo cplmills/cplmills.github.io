@@ -11,10 +11,24 @@ fetch(apiURL)
     const desc = jsObject.list[0].weather.description;  // note how we reference the weather array
     const humidity = jsObject.list[0].main.humidity;
     const temp = jsObject.list[0].main.temp;
+    const tags = document.getElementsByClassName("dayOfWeek")
     document.getElementById("currently").innerHTML = currentWeather;
     document.getElementById("temperature").textContent = temp;
     document.getElementById("humidity").textContent = humidity+"%";
     document.getElementById("windspeed").textContent = windSpeed;
+
+    data = jsObject.list;
+    // console.log(data);
+    let day = 0;
+    data.map(entry => {
+      if (entry.dt_txt.includes("18:00:00")){
+        console.log(day);
+        dayIcon = "https://openweathermap.org/img/wn/" + entry.weather[0].icon + "@2x.png";
+        tags[day].setAttribute('src', dayIcon);
+        day += 1;
+      }
+    });
+
     showWindChill();    
   });
 
@@ -32,4 +46,9 @@ function showWindChill(){
     } else {
         document.querySelector('#windchill').innerHTML = "N/A";
     }
+}
+
+function replaceFiveDayIcons(){
+
+  
 }

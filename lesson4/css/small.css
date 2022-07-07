@@ -198,16 +198,22 @@ footer ul {
     text-align: center;
 }
 
-footer li {
+footer li , footer a {
     font-size: 80%;
     text-align: center;
     display: inline-block;
     flex: 1 1 100%;
     padding: 5px;
+    color: white;
 }
 
 footer li:nth-child(2){
     border-left: 1px solid white;
+    border-right: 1px solid white;
+    padding: 0 1rem;
+}
+
+footer li:nth-child(3){
     border-right: 1px solid white;
     padding: 0 1rem;
 }
