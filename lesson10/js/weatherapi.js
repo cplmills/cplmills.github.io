@@ -26,7 +26,7 @@ fetch(apiURL)
         console.log(day);
         dayIcon = "https://openweathermap.org/img/wn/" + entry.weather[0].icon + "@2x.png";
         tags[day].setAttribute('src', dayIcon);
-        labeltags[day].innerHTML = entry.weather[0].description;
+        labeltags[day].innerHTML = entry.weather[0].main;
         day += 1;
       }
     });
