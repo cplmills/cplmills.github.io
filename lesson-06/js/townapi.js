@@ -1,4 +1,5 @@
 function loadTownData(){
+  // Loads the town data for index.html
   const apiURL = "https://byui-cit230.github.io/weather/data/towndata.json";
 
   let res = fetch(apiURL)
@@ -40,12 +41,12 @@ function loadTownData(){
 }
 
 function loadEvents(townName){
+  // Loads event information for the requested town, used on the preston, fishhaven and sodasprings pages
   const apiURL = "https://byui-cit230.github.io/weather/data/towndata.json";
 
   let res = fetch(apiURL)
     .then((response) => response.json())
     .then(data => {
-      console.log(data);
       const thisTown = data.towns.filter(town => {
         if (town.name == townName){
           events = town.events;
@@ -53,6 +54,7 @@ function loadEvents(townName){
           eventTags = document.getElementsByClassName("event-item");
           events.map(event => {
             newEventTag = document.createElement("p");
+            newEventTag.setAttribute("class", "event-item")
             newEventTag.innerHTML = event;
             mainDiv.appendChild(newEventTag);
           })

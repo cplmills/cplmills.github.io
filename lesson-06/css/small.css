@@ -140,7 +140,6 @@ main {
     background-color: rgba(255,255,255,.8);
     height: 100%;
     border: 1px solid grey;
-    /* padding-bottom: 1em; */
 }
 
 main p, a {
@@ -160,7 +159,6 @@ figure {
 }
 
 figure img {
-    /* min-width: 100%; */
     max-width: 100%;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;  
@@ -203,8 +201,21 @@ figcaption {
     padding: 0;
 }
 
+.events-heading {
+    background-color: #07a0c3;
+    padding: .8rem;
+    margin: 0;
+    font-weight: bold;
+}
+
 .article.section.events {
     padding: 0;
+}
+
+.event-item {
+    margin: 0 1rem;
+    padding: 0;
+    line-height: 1.8rem;
 }
 
 .weather-table {
@@ -271,7 +282,6 @@ figcaption {
 
 .article-img img{
     display: block;
-    /* width: 300px; */
     max-width: 100%;
     margin: 0 auto;
 }
@@ -294,7 +304,7 @@ figcaption {
 /* FOOTER SECTION STARTS HERE */
 
 #map {
-    width: 100%;
+    width: 80%;
 }
 
 footer {

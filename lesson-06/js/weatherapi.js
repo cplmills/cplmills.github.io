@@ -1,5 +1,5 @@
 function weatherData(cityNumber){
-
+  // Lodas weather statistics for the supplied town
   const apiURL = "https://api.openweathermap.org/data/2.5/forecast?id=" + cityNumber + "&units=imperial&appid=c586379ded6a7698afec8afa0d841a8a";
   fetch(apiURL)
     .then((response) => response.json())
@@ -31,10 +31,12 @@ function weatherData(cityNumber){
   }
 
 function calcWindChill(t, s){
+    // used in showWindChill() to calculate the windchill based off of speed and temp
     return 35.74 + 0.6215 * t - 35.75 * s ** 0.16 + 0.4275 * t * s ** 0.16;
 }
 
 function showWindChill(){
+    // Displays the windChill figure in the weather stats hero banner
     let speed = parseInt(document.querySelector('#windspeed').innerHTML);
     let temp  = parseInt(document.querySelector('#temperature').innerHTML);
     if (temp >= 50 && speed >= 3){

@@ -1,4 +1,4 @@
-
+// This script replaces the img src with the data-src values when the image flows onto the screen
 let imagesToLoad = document.querySelectorAll('img[data-src]');
 let srcToLoad = document.querySelectorAll('source[data-src]');
 let options = {
