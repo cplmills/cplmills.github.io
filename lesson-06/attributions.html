@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en-au">
+    <head>
+        <title>Chris Mills - WDD 230 Better Weather Home Page</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Weather Better Home Page.">
+
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+        <script src="js/townapi.js"></script>
+        <script src="js/scripts.js"></script>
+        <script src="js/lastModified.js"></script>
+    </head>
+    <body>
+        <header>
+            <section id="header-section">
+                <div id="logo">
+                    <img src="images/weather-better-logo-min.png" alt="Weather Better Logo">
+                </div>
+                <div class="heading">
+                    <h1 id="logo-text">Weather Better</h1>
+                    <h2 id="logo-description">Doing weather... Better!</h2>
+                </div>
+            </section>
+            <nav>
+                <ul class="navigation">
+                    <li id="menuButton"><a href="#" onclick="toggleMenu('navigation', 'responsive'); toggleButton();">&#127746; Menu</a></li>
+                    <li><a href="/lesson-06/index.html">Home</a></li>
+                    <li><a href="/lesson-06/preston.html">Preston</a></li>
+                    <li><a href="/lesson-06/sodasprings.html">Soda Springs</a></li>
+                    <li><a href="/lesson-06/fishhaven.html">Fish Haven</a></li>
+                    <li><a href="/lesson-06/stormcenter.html">Storm Center</a></li>
+                    <li><a href="/lesson-06/gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Thank You to the Following Sites:</h1>
+            <ul>
+                <li><a href="http://mylocalradio.com">MyLocalRadio.com</a> - For providing the news quotation and image for the Soda Springs page.</li>
+                <li><a href="http://fonts.google.com">Fonts.Google.com</a> - For supplying the fint used on this site.</li>
+                <li><a href="https://unsplash.com/photos/T7K4aEPoGGk">Pietro De Grandi from Splash.com</a> - For supplying the header image used on the Fish Haven Page</li>
+
+            </ul>
+        </main>        
+        <div class="section contact">
+            <h3>Contact Information</h3>
+            <div class="contact-info">
+                <p><img src="images/email-icon.png" alt = "Envelope icon"> admin@themillsclan.com</p>
+                <p><img src="images/phone-icon.png" alt="Phone icon"> +61 (403) 444 555</p>
+                <p><img src="images/location.png" alt="Location icon">31 Pine Creek Rd, Queensland, 4213</p>
+            </div>
+            <div class="socials">
+                <a href="http://www.pinterest.com"><img src="images/Pinterest-Icon.png" alt="Pinterest Logo"></a>
+                <a href="http://www.twitter.com"><img src="images/Twitter-Icon.png" alt="Twitter Logo"></a>
+                <a href="http://www.instagram.com"><img src="images/Instagram-Icon.png" alt="Instagram Logo"></a>
+                <a href="http://www.facebook.com"><img src="images/Facebook-Icon.png" alt="Facebook Logo"></a>
+            </div>
+            <img src="https://via.placeholder.com/760x400" data-src="images/map.jpg" id="map" alt="Location Map">
+        </div>
+        
+        
+        <!-- FOOTER SECTION BEGINS HERE -->
+        
+        <footer>
+            <ul>
+                <li><a href="/index.html">Weather Better</a></li>
+                <li><a href="/attributions.html">Attributions</a></li>
+                <li><a href="mailto:admin@themillsclan.com">Chris Mills</a></li>
+                <li><a href="/wireframes.html">Wireframes</a></li>
+            </ul>
+            <p id="lastModified">Date last modified here</p>
+            <script>
+                lastModified();
+                activeLink();
+                loadTownData();
+            </script>
+        </footer>
+        <script src="js/image-scripts.js"></script>
+    </body>
+</html>
