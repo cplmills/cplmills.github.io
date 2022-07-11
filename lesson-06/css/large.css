@@ -1,0 +1,200 @@
+@media only screen and (min-width:1200px){
+    nav a {
+        font-size: 1.5em;
+    }
+
+    body {
+        background-image: url("/lesson2/weather/images/summer_3000_2249.jpg");
+        background-position: bottom;
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        padding-top: 1rem;
+        padding-left:0;
+        text-decoration: underline;
+    }
+
+    h4 {
+        margin-bottom: 1rem;
+        padding: 0;
+    }
+
+    #logo-text {
+        font-size: 5rem;
+    }
+    
+    #logo-description {
+        font-size: 3rem;
+    }
+
+    nav {
+        font-size: 1.2rem;
+    }
+
+    nav li a {
+        font-size: 1em;
+    }
+
+    #logo {
+        min-width: 180px;
+    }
+
+    #gallery-inner {
+        display: grid;
+        grid-template-columns: repeat(3 , 1fr);
+    }
+
+    .article-img img {
+        max-width: 150%;
+        width: 40%;
+    }
+
+    /* FORMS */
+
+    form label.your_details input, form label.your_details select, form .storm_details select, form label.storm_details input, form label.additional_info textarea {        padding: .4rem 0;
+        /* padding: 0.4rem; */
+        max-width: 30rem;
+        padding-left: .4rem;
+    }
+
+    #storm_region {
+        width: 100%;
+        max-width: 30.5rem;
+    }
+
+    .storm_severity_section {
+        max-width: 29rem;
+        padding-right: 14px;
+    }
+
+
+    .contact img {
+        margin: 0 auto;
+        margin-right: 1em;
+    }
+
+    .contact-info img {
+        max-width: 50px;
+    }
+
+    .socials img {
+        max-width: 60px;
+    }
+
+    /* Container for weather forecast and events boxes */
+
+    .forecast-events {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+
+    }
+
+    .events {
+        font-size: 1rem;
+        padding: 0;
+        margin: 1rem 1.5rem 1rem 0;
+    }
+    
+    /* TOWN INFORMATION TILES */
+
+    .large-display {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        margin: 1rem;
+    }
+
+    .town-info:nth-child(1) {
+        grid-column: 1 / 2;
+    }
+
+    .town-info:nth-child(2) {
+        grid-column: 2 / 3;
+    }
+
+    .town-info:nth-child(3) {
+        grid-column: 3 / 4;
+    }
+
+    .town-info {
+        background-color: rgba(255, 255, 255, 0.6);
+        padding-bottom: 1rem;
+        border: none;
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        margin-bottom: 1rem;
+        border: 1px solid #9999;
+        border-radius: 10px;
+        
+    }
+
+    .town-banner {
+        border: none;
+        position: relative;
+        overflow: auto;
+        grid-column: 1 / -1;
+    }
+
+    .town-banner img {
+        display: none;
+    }
+
+    .block-img {
+        display: block;
+        grid-column: 1 / -1;
+        margin: 0 auto;
+        padding-top: 1rem;
+    }
+
+    .town-banner-content {
+        display: block;
+        position: relative;
+        width: 100%;
+    }
+
+    .town-banner-content p {
+        margin: 0 auto;
+        text-align: center;
+        background-color: transparent;
+        padding: 0;
+    }
+
+    .town-info:nth-child(even) img{
+        justify-self: inherit;
+    }
+    
+    .town-info:nth-child(even) .town-stats {
+        grid-column: 1 / -1;
+        grid-row: 3 / 4;
+    }
+
+    .town-stats {
+        grid-column: 1 / -1;
+        grid-row: 3 / 4;
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .town-stats p {
+        padding-left: 0;
+
+    }
+
+    .town-banner-content p:nth-child(1){
+        font-size: 3rem;
+    }
+
+    .town-banner-content p:nth-child(2){
+        font-size: 1.5rem;
+    }
+
+    .wiki-info {
+        grid-column: 1 / -1;
+        grid-row: 4 / 5;
+        border-top: 1px solid #999;
+    }
+
+}

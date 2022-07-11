@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en-au">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Weather Better's Gallery of weather images.">
+        <title>Chris Mills - WDD 230 Weather Gallery</title>
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+        <script src="js/lastModified.js"></script>
+        <script src="js/scripts.js"> </script>
+    </head>
+
+    <body>
+        <header>
+            <section id="header-section">
+                <div id="logo">
+                    <img src="images/weather-better-logo-min.png" alt="Weather Better Logo">
+                </div>
+                <div class="heading">
+                    <h1 id="logo-text">Weather Better</h1>
+                    <h2 id="logo-description">Doing weather... Better!</h2>
+                </div>
+            </section>
+            <nav>
+                <ul class="navigation">
+                    <li id="menuButton"><a href="#" onclick="toggleMenu('navigation', 'responsive'); toggleButton();">&#127746; Menu</a></li>
+                    <li><a href="/lesson-06/index.html">Home</a></li>
+                    <li><a href="/lesson-06/preston.html">Preston</a></li>
+                    <li><a href="/lesson-06/sodasprings.html">Soda Springs</a></li>
+                    <li><a href="/lesson-06/fishhaven.html">Fish Haven</a></li>
+                    <li><a href="/lesson-06/stormcenter.html">Storm Center</a></li>
+                    <li><a href="/lesson-06/gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Weather Gallery</h1>
+            <div id="gallery-outer" class="section">
+                <div id="gallery-inner">
+                    <figure class="weather-image">
+                        <picture class="blurred">
+                            <source srcset="https://via.placeholder.com/600x412" data-src="images/weather1-600-412.jpg" media="(min-width: 600px)" class="gallery-img">
+                                <img src="https://via.placeholder.com/300x206" data-src="images/weather1-300-206.jpg" alt="Storm in a dark sky" class="gallery-img">
+                        </picture>
+                        <figcaption>Storm in a dark sky over Preston</figcaption>
+                    </figure>
+                    <figure class="weather-image">
+                        <picture class="blurred">
+                            <source srcset="https://via.placeholder.com/600x412" data-src="images/weather2-600-412.jpg" media="(min-width: 600px)" class="gallery-img">
+                                <img src="https://via.placeholder.com/300x206" data-src="images/weather2-300-206.jpg" alt="Clouds over a beautiful lake" class="gallery-img">
+                        </picture>
+                        <figcaption>Clouds over lake Fraser</figcaption>
+                    </figure>
+                    <figure class="weather-image">
+                        <picture class="blurred">
+                            <source srcset="https://via.placeholder.com/600x412" data-src="images/weather3-600-412.jpg" media="(min-width: 600px)" class="gallery-img">
+                                <img src="https://via.placeholder.com/300x206" data-src="images/weather3-300-206.jpg" alt="Sun rising over a canyon" class="gallery-img">
+                        </picture>
+                        <figcaption>Sun rising over Pocket Canyon</figcaption>
+                    </figure>
+                    <figure class="weather-image">
+                        <picture class="blurred">
+                            <source srcset="https://via.placeholder.com/600x412" data-src="images/weather4-600-412.jpg" media="(min-width: 600px)" class="gallery-img">
+                                <img src="https://via.placeholder.com/300x206" data-src="images/weather4-300-206.jpg" alt="Bus stop in the rain" class="gallery-img">
+                        </picture>
+                        <figcaption>A rainy day in central Soda Springs </figcaption>
+                    </figure>
+                    <figure class="weather-image">
+                        <picture class="blurred">
+                            <source srcset="https://via.placeholder.com/600x412" data-src="images/weather5-600-412.jpg" media="(min-width: 600px)" class="gallery-img">
+                                <img src="https://via.placeholder.com/300x206" data-src="images/weather5-300-206.jpg" alt="Fluffy clouds at sunrise" class="gallery-img">
+                        </picture>
+                        <figcaption>Fluffy clouds in the sky over Fish Haven</figcaption>
+                    </figure>
+                    <figure class="weather-image">
+                        <picture class="blurred">
+                            <source srcset="https://via.placeholder.com/600x412" data-src="images/weather6-600-412.jpg" media="(min-width: 600px)" class="gallery-img">
+                                <img src="https://via.placeholder.com/300x206" data-src="images/weather6-300-206.jpg" alt="Clouds reflected in a clear lake" class="gallery-img">
+                        </picture>
+                        <figcaption>Lake reflections at Soda Springs</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </main>
+        <div class="section contact">
+            <h3>Contact Information</h3>
+            <div class="contact-info">
+                <p><img src="images/email-icon.png" alt = "Envelope icon"> admin@themillsclan.com</span></p>
+                <p><img src="images/phone-icon.png" alt="Phone icon"> +61 (403) 444 555</p>
+                <p><img src="images/location.png" alt="Location icon">31 Pine Creek Rd, Queensland, 4213</span></p>
+            </div>
+            <div class="socials">
+                <a href="http://www.pinterest.com"><img src="images/Pinterest-Icon.png" alt="Pinterest Logo"></a>
+                <a href="http://www.twitter.com"><img src="images/Twitter-Icon.png" alt="Twitter Logo"></a>
+                <a href="http://www.instagram.com"><img src="images/Instagram-Icon.png" alt="Instagram Logo"></a>
+                <a href="http://www.facebook.com"><img src="images/Facebook-Icon.png" alt="Facebook Logo"></a>
+            </div>
+            <img src="https://via.placeholder.com/760x400" data-src="images/map.jpg" id="map" alt="Location Map">
+        </div>
+        
+        <footer>
+            <ul>
+                <li><a href="index.html">Weather Better</a></li>
+                <li>Attributions</li>
+                <li>Chris Mills</li>
+                <li><a href="wireframes.html">Wireframes</a></li>
+            </ul>
+            <p id="lastModified">Date last modified here</p>
+            <script>
+                lastModified();
+                displayBanner();                     
+                activeLink();
+            </script>
+            <script src="js/image-scripts.js"></script>
+        </footer>
+
+    </body>
+</html>

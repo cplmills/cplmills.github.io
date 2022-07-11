@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-au">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Gallery of weather images.">
+        <title>Chris Mills - WDD 230 Gallery</title>
+        <link rel="stylesheet" href="/lesson4/css/small.css">
+        <link rel="stylesheet" href="/lesson4/css/medium.css">
+        <link rel="stylesheet" href="/lesson4/css/large.css">
+        <script src="/lesson2/weather/js/lastModified.js"></script>
+        <script src="/lesson2/weather/js/scripts.js"> </script>
+    </head>
+
+    <body>
+        <header>
+            <section id="header-section">
+                <div id="logo">
+                    <img src="/lesson2/weather/images/weather-better-logo-min.png" alt="Weather Better Logo">
+                </div>
+                <div class="heading">
+                    <h1 id="logo-text">Weather Better</h1>
+                    <h2 id="logo-description">Doing weather... Better!</h2>
+                </div>
+            </section>
+            <nav>
+                <ul class="navigation">
+                    <li id="menuButton"><a href="#" onclick="toggleMenu('navigation', 'responsive'); toggleButton();">&#127746; Menu</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="/lesson2/weather/preston.html">Preston</a></li>
+                    <li><a href="#">Soda Springs</a></li>
+                    <li><a href="#">Fish Haven</a></li>
+                    <li><a href="#">Storm Center</a></li>
+                    <li><a href="#">Gallery</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Thank You!</h1>
+            <div class="thanks">
+                <p> Thank you for taking the time to report your storm.</p><p> This information helps us save lives and prepare local residence for the coming weather.</p>
+                <a href="index.html">Click here to return to the home page</a>
+            </div>  
+        </main>
+        <footer>
+            <ul>
+                <li>Weather Better</li>
+                <li>Attributions</li>
+                <li>Chris Mills</li>
+            </ul>
+            <p id="lastModified">Date last modified here</p>
+            <script>
+                lastModified();
+                activeLink();
+            </script>
+        </footer>
+        <script src="/lesson4/js/image-scripts.js"></script>
+
+    </body>
+</html>

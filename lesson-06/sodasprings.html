@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-au">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Weather information for the town of Soda Springs, Idaho, including local community events and gatherings.">
+        <title>Chris Mills - WDD 230 Soda Springs Town Page</title>
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+        <script src="js/scripts.js"></script>
+        <script src="js/lastModified.js"></script>
+        <script src="js/weatherapi.js"></script>
+        <script src="js/townapi.js"></script>
+    </head>
+
+    <body>
+        <div id="alert-banner">
+
+        </div>
+        <header>
+            <section id="header-section">
+                <div id="logo">
+                    <img src="images/weather-better-logo-min.png" alt="Weather Better Logo">
+                </div>
+                <div class="heading">
+                    <h1 id="logo-text">Weather Better</h1>
+                    <h2 id="logo-description">Doing weather... Better!</h2>
+                </div>
+            </section>
+            <nav>
+                <ul class="navigation">
+                    <li id="menuButton"><a href="#" onclick="toggleMenu('navigation', 'responsive'); toggleButton();">&#127746; Menu</a></li>
+                    <li><a href="/lesson-06/index.html">Home</a></li>
+                    <li><a href="/lesson-06/preston.html">Preston</a></li>
+                    <li><a href="/lesson-06/sodasprings.html">Soda Springs</a></li>
+                    <li><a href="/lesson-06/fishhaven.html">Fish Haven</a></li>
+                    <li><a href="/lesson-06/stormcenter.html">Storm Center</a></li>
+                    <li><a href="/lesson-06/gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2>Soda Springs, Idaho</h2>
+            <div class="hero">
+                <picture class="heroImage">
+                    <source srcset="images/sodasprings_hero_600x291.webp" media="(min-width: 300px) and (max-width: 600px)">
+                            <source srcset="images/sodasprings_hero_800x388.webp" media="(min-width: 601px) and (max-width: 800px)">
+                            <source srcset="images/sodasprings_hero_1200x582.webp" media="(min-width: 801px)">
+                            <img src="images/sodasprings_hero_300x146.webp" alt="Sun rising over a green field">
+                </picture>
+                <div class="weather-table">
+                    <h3>Weather Summary</h3>
+                    <span class="attribute">Currently: </span><span class="value" id="currently"></span>
+                    <span class="attribute weather-table-blue">High:      </span><span class="value weather-table-blue" id="temperature"></span>
+                    <span class="attribute">Wind Chill:</span><span class="value" id="windchill"></span>
+                    <span class="attribute weather-table-blue">Humidity:  </span><span class="value weather-table-blue" id="humidity"></span>
+                    <span class="attribute">Wind Speed:</span><span class="value" id="windspeed"></span>
+                </div>
+            </div>
+            <div class="forecast-events">
+
+                <div class="fiveDay">
+                    <div class="flex-col">
+                        <span class="forecast-head leftCorner">Monday</span>
+                        <img src="images/sun_icon.png" alt="Sunshine" class="dayOfWeek">
+                        <span class="forecast-label">Sunny</span>
+                    </div>
+                    <div class="flex-col">
+                        <span class="forecast-head">Tuesday</span>
+                        <img src="images/sun_icon.png" alt="Sunshine" class="dayOfWeek">
+                        <span class="forecast-label">Sunny</span>
+                    </div>
+                    <div class="flex-col">
+                        <span class="forecast-head">Wednesday</span>
+                        <img src="images/sun_icon.png" alt="Sunshine" class="dayOfWeek">
+                        <span class="forecast-label">Sunny</span>
+                    </div>
+                    <div class="flex-col">
+                        <span class="forecast-head">Thursday</span>
+                        <img src="images/sun_icon.png" alt="Sunshine" class="dayOfWeek">
+                        <span class="forecast-label">Sunny</span>
+                    </div>
+                    <div class="flex-col">
+                        <span class="forecast-head rightCorner">Friday</span>
+                        <img src="images/sun_icon.png" alt="Sunshine" class="dayOfWeek">
+                        <span class="forecast-label">Sunny</span>
+                    </div>
+                </div>
+                <div class="article section events">
+                    <h2>Upcoming Events:</h2>
+                    <!-- Auto Generated Events section goes here -->
+                </div>
+            </div>
+
+            <div class="section article">
+                <h3>Soda Springs to Welcome New Mine</h3>
+                <h4> By Chris Mills</h4>
+                <div class="article-inner">
+                    <div class="article-img">
+                        <picture>
+                            <source srcset="https://mylocalradio.com/wp-content/uploads/2020/01/city-of-soda-springs.png" media="(min-width: 1160px)">
+                            <img src="https://mylocalradio.com/wp-content/uploads/2020/01/city-of-soda-springs.png" alt="Soda Springs Mining image courtesy of mylocalradio.com">
+                            <figcaption>Image and story courtesy of mylocalradio.com</figcaption>
+                        </picture>
+                        <div class="article-text">According to mylocalradio.com, "SODA SPRINGS, Idaho   –   The Planning and Zoning Commission of the City of Soda Springs will be taking public comments on the proposed new Comprehensive Plan, including a Future Land Use Map for the city.
+                            The hearing will be held at 6:05pm on Tuesday, February 11 at Soda Springs City Hall.
+                            The proposed plan is a guide to be used when making decisions regarding land use, planning and zoning, and future development to address present and future needs of the community.                         
+                            According to a public notice from the city, the main objective of the proposal is to promote a positive lifestyle for residents and business owners.                      
+                            Anyone interested is welcome to attend the hearing to express their views on the plan."<a href="https://mylocalradio.com/soda-springs-to-hear-comments-about-new-future-land-use-plan/" target="_blank"> continue to full article on mylocalradio.com</a></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="section contact">
+            <h3>Contact Information</h3>
+            <div class="contact-info">
+                <p><img src="images/email-icon.png" alt = "Envelope icon"> admin@themillsclan.com</p>
+                <p><img src="images/phone-icon.png" alt="Phone icon"> +61 (403) 444 555</p>
+                <p><img src="images/location.png" alt="Location icon">31 Pine Creek Rd, Queensland, 4213</p>
+            </div>
+            <div class="socials">
+                <a href="http://www.pinterest.com"><img src="images/Pinterest-Icon.png" alt="Pinterest Logo"></a>
+                <a href="http://www.twitter.com"><img src="images/Twitter-Icon.png" alt="Twitter Logo"></a>
+                <a href="http://www.instagram.com"><img src="images/Instagram-Icon.png" alt="Instagram Logo"></a>
+                <a href="http://www.facebook.com"><img src="images/Facebook-Icon.png" alt="Facebook Logo"></a>
+            </div>
+            <img src="https://via.placeholder.com/760x400" data-src="/lesson2/weather/images/map.jpg" id="map" alt="Location Map">
+        </div>
+        
+        <footer>
+            <ul>
+                <li><a href="index.html">Weather Better</a></li>
+                <li>Attributions</li>
+                <li>Chris Mills</li>
+                <li><a href="wireframes.html">Wireframes</a></li>
+
+            </ul>
+            <p id="lastModified">Date last modified here</p>
+            <script>
+                lastModified();
+                displayBanner();                     
+                activeLink();
+                weatherData("5607916");
+                loadEvents("Soda Springs");
+
+            </script>
+            <script src="js/image-scripts.js"></script>
+   
+        </footer>
+        
+    </body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en-au">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Report a Storm to the Team at Weather Better">
+        <title>Chris Mills - WDD 230 Storm Center Contact Page</title>
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+        <script src="js/lastModified.js"></script>
+        <script src="js/scripts.js"> </script>
+    </head>
+
+    <body>
+        <header>
+            <section id="header-section">
+                <div id="logo">
+                    <img src="images/weather-better-logo-min.png" alt="Weather Better Logo">
+                </div>
+                <div class="heading">
+                    <h1 id="logo-text">Weather Better</h1>
+                    <h2 id="logo-description">Doing weather... Better!</h2>
+                </div>
+            </section>
+            <nav>
+                <ul class="navigation">
+                    <li id="menuButton"><a href="#" onclick="toggleMenu('navigation', 'responsive'); toggleButton();">&#127746; Menu</a></li>
+                    <li><a href="/lesson-06/index.html">Home</a></li>
+                    <li><a href="/lesson-06/preston.html">Preston</a></li>
+                    <li><a href="/lesson-06/sodasprings.html">Soda Springs</a></li>
+                    <li><a href="/lesson-06/fishhaven.html">Fish Haven</a></li>
+                    <li><a href="/lesson-06/stormcenter.html">Storm Center</a></li>
+                    <li><a href="/lesson-06/gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Storm Center</h1>
+
+            <form method="get" action="thanks.html">
+                <fieldset>
+                    <legend>Your Details</legend>
+                    <label class="your_details">Full Name*<input type="text" name="fname" pattern="^([a-zA-Z ]){5,}$" required></label>
+                    <label class="your_details">Email<input type="email" name="email" placeholder="name@domain.com"></label>
+                    <label class="your_details">Phone Number*<input type="tel" name="phone" pattern="^([0-9]){9,}$" required></label>
+                    <label class="your_details">Zip Code*<input type="number" name="zip" required></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Storm Details</legend>
+                    <label class="your_details">Storm Date<input type="date" name="stormdate"></label>
+                    <label class="your_details">Storm Type
+                        <input list="storm_type">
+                        <datalist id="storm_type">
+                                <option value="Flash Flood">Flash Flood</option>
+                                <option value="Hail">Hail</option>
+                                <option value="Hurricane">Hurricane</option>
+                                <option value="Thunderstorm">Thunderstorm</option>
+                                <option value="Tornado">Tornado</option>
+                            </datalist>
+                    </label>
+                    <div class="storm_severity_section">
+                        <label class="storm_details">Storm Severity<input type="range" id="storm_severity" name="storm_severity" min="0" max="10" onchange="updateSlider()"></label>
+                        <label class="output">You Selected: <output>5</output></label>
+                    </div>
+                    <label class="storm_details">Storm Region:
+                        <select name="storm_region" id="storm_region">
+                            <option value="" selected disabled>Select Region... &#9662;</option>
+                            <option value="Fish Haven">Fish Haven</option>
+                            <option value="Preston">Preston</option>
+                            <option value="Soda Springs">Soda Springs</option>
+                        </select>
+                    </label>                    
+                </fieldset>
+                <fieldset id="fs_additional">
+                    <legend>Additional Information</legend>
+                    <label class="additional">Are You In Danger</label>
+                        <label class="additional_radio"><input type="radio" name="user_in_danger" class="user_in_danger" value="Yes"> Yes</label>
+                        <label class="additional_radio"><input type="radio" name="user_in_danger" class="user_in_danger" value="Maybe"> Maybe</label>
+                        <label class="additional_radio"><input type="radio" name="user_in_danger" class="user_in_danger" value="No"> No</label>
+                    <label class="additional_info">Additional Information<textarea rows="6" name="additional" id="additional"></textarea></label>
+                </fieldset>
+                <input type="submit" value="Report Storm" id="submitBtn">
+            </form>
+        </main>
+        <div class="section contact">
+            <h3>Contact Information</h3>
+            <div class="contact-info">
+                <p><img src="images/email-icon.png" alt = "Envelope icon"> admin@themillsclan.com</span></p>
+                <p><img src="images/phone-icon.png" alt="Phone icon"> +61 (403) 444 555</p>
+                <p><img src="images/location.png" alt="Location icon">31 Pine Creek Rd, Queensland, 4213</span></p>
+            </div>
+            <div class="socials">
+                <a href="http://www.pinterest.com"><img src="images/Pinterest-Icon.png" alt="Pinterest Logo"></a>
+                <a href="http://www.twitter.com"><img src="images/Twitter-Icon.png" alt="Twitter Logo"></a>
+                <a href="http://www.instagram.com"><img src="images/Instagram-Icon.png" alt="Instagram Logo"></a>
+                <a href="http://www.facebook.com"><img src="images/Facebook-Icon.png" alt="Facebook Logo"></a>
+            </div>
+            <img src="https://via.placeholder.com/760x400" data-src="images/map.jpg" id="map" alt="Location Map">
+        </div>
+        
+        <footer>
+            <ul>
+                <li><a href="index.html">Weather Better</a></li>
+                <li>Attributions</li>
+                <li>Chris Mills</li>
+                <li><a href="wireframes.html">Wireframes</a></li>
+            </ul>
+            <p id="lastModified">Date last modified here</p>
+            <script>
+                lastModified();
+                displayBanner();                     
+                activeLink();
+                showWindChill(); 
+            </script>
+            <script src="js/image-scripts.js"></script>
+        </footer>
+
+    </body>
+</html>

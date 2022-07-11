@@ -1,0 +1,559 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap');
+
+body {
+    font-family: 'Merriweather Sans', sans-serif;
+    background-image: url("../../lesson2/weather/images/clouds.jpeg");
+    background-attachment: fixed;
+    background-size: cover;
+    font-size: 1rem;
+    margin: 0;
+}
+
+#alert-banner {
+    display: none;
+    background: linear-gradient(0deg, rgba(254,95,85,1) 0%, rgba(255,175,171,1) 53%, rgba(254,95,85,1) 100%);
+    padding: 0.1rem;
+    text-align: center;
+    box-shadow: 5px 5px 5px;
+    border-bottom: 2px solid white;
+}
+
+#header-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255,255,255,0.6);  
+    padding-bottom: 1em;
+    padding-top: 1em;
+    text-align: center;
+}
+
+#logo-text, #logo-description {
+    padding: 0px;
+    background: none;
+    align-items: center;
+    color: black;
+    padding-left: .5em;
+}
+
+#logo-text {
+    font-size: 2.5rem;
+}
+
+#logo img{
+    max-width: 80px;
+    height: auto;
+}
+
+nav {
+    background-color: #086788;
+    max-width: 760px;
+}
+
+nav li {
+    display: none;
+}
+
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav ul {
+    margin: 0;
+}
+
+nav ul li {
+    text-align: center;
+    border: 1px solid #086788;
+}
+
+nav ul li a {
+    padding: 0.5em;
+}
+
+nav ul li a:hover {
+    background-color: #FFFFFF;
+    color:#086788;
+}  
+
+.navigation {
+    padding-inline-start: 0px;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+.responsive li{
+    display: block;
+}
+
+main .section {
+    background-color: rgb(227, 244, 250);
+}
+
+h1, h2, h3, h4 {
+    margin: 0px;
+    padding: 4px;
+    word-wrap:break-word;
+    white-space: normal;
+}
+
+h4 {
+    color: #086788;
+    font-size: smaller;
+    padding-left: 2em;
+}
+
+h1 {
+    background-image: linear-gradient(to right, #086788, white); 
+    color: white;       
+}
+
+h3 {
+    padding-left: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: #086788;
+}
+
+main h2 {
+    background-image: linear-gradient(to right, #07a0c3, white)
+}
+
+.highlighted-text {
+    background-color: #FE5F55;
+    padding: 5px;
+    border: 1px solid black;
+    box-shadow: 3px 3px 10px ;
+}
+
+main {
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgba(255,255,255,.8);
+    height: 100%;
+    border: 1px solid grey;
+    /* padding-bottom: 1em; */
+}
+
+main p, a {
+    padding-left: 1em;
+}
+
+#gallery-outer {
+    display: block;
+}
+
+figure {
+    padding: 0;
+    border: 1px solid grey;
+    box-shadow: 0px 0px 5px grey;
+    background: white;
+    border-radius: 5px;
+}
+
+figure img {
+    /* min-width: 100%; */
+    max-width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;  
+}
+
+.gallery-img {
+    min-width: 100%;
+}
+
+figure:hover {
+    box-shadow: 8px 8px 15px grey;
+}
+
+figcaption {
+    padding: 5px;
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+.blurred {
+    filter: blur(0.2em);
+    z-index: 1;
+}
+
+.hero img {
+    max-width: 100%;
+    min-width: 100%;
+
+}
+
+.hero p {
+    grid-row: auto;
+}
+
+.article h2 {
+    padding: 0.5rem 1rem;
+}
+
+.events {
+    padding: 0;
+}
+
+.article.section.events {
+    padding: 0;
+}
+
+.weather-table {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.weather-table span {
+    padding-left: 1em;
+}
+
+.weather-table .value {
+    text-align: right;
+    padding-right: 1em;
+}
+
+.weather-table h3 {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    border-bottom: 1px solid #086788;
+}
+
+.weather-table .attribute {
+    font-weight: bolder;
+    padding: 3px;
+}
+
+.weather-table-blue{
+    background-color: #086788;
+    color: white;
+}
+
+.forecast img {
+    grid-column: 1 / -1;
+    width: 100%;
+}
+
+.fiveDay {
+    display: none;
+}
+
+.article {
+    border: 1px solid #939696;
+    border-radius: 1em;
+    padding: 0 1em;
+    margin: 1em;
+    overflow: auto;
+}
+
+.article-text {
+    display: block;
+    width: 100%;
+    
+}
+
+.article a {
+    display:block;
+    background: none;
+    padding: 1em 0;
+}
+
+.article-img img{
+    display: block;
+    /* width: 300px; */
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.contact {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding-left: 1em;
+    padding: 1em 0;
+}
+
+.contact img {
+    max-width: 90%;
+    margin: 0 1em;
+}
+
+.contact-info img {
+    max-width: 25px;
+}
+
+/* FOOTER SECTION STARTS HERE */
+
+#map {
+    width: 100%;
+}
+
+footer {
+    display: block;
+    background-color: #086788;
+    color: white;
+    padding: .2em 0;
+}
+
+footer ul {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+footer li , footer a {
+    font-size: 80%;
+    text-align: center;
+    display: inline-block;
+    flex: 1 1 100%;
+    padding: 5px;
+    color: white;
+}
+
+footer li:nth-child(2){
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    padding: 0 1rem;
+}
+
+footer li:nth-child(3){
+    border-right: 1px solid white;
+    padding: 0 1rem;
+}
+
+footer p {
+    display: block;
+    text-align: center;
+    font-size: 80%;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 1em;
+}
+
+.activeLink {
+    background-color: #07a0c3;
+}
+
+.socials {
+    display: none;
+}
+
+
+/* ---------------- FORMS ---------------------- */
+form fieldset {
+    margin: 2rem 2rem;
+    border: 1px solid #445ba9;
+    border-radius: 10px;
+    padding: 0.5rem 2%;
+}
+
+form legend {
+    color: #445ba9;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+
+form label, form div {
+    display: block;
+    padding-top: 1rem;
+    color: #086788;
+    font-size: .8rem;
+}
+
+.storm_severity_section {
+    border: 1px solid #999;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 1rem 0;
+    width: 100%;
+    max-width: 20rem;
+}
+
+form label.storm_details, label.output {
+    padding: 0;
+    margin: 0;
+}
+
+form label.your_details input, select, form label.your_details select, form label.storm_details input[type="date"], form label.additional_info textarea {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: 1px solid #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 85%;
+    max-width: 20rem;
+    background-color: rgba(0,0,0,0.1);
+}
+
+#storm_region {
+    width: 100%;
+    max-width: 22rem;
+}
+
+form input[type="range"] {
+    display: block;
+    width: 100%;
+    max-width: 21rem;
+}
+
+form label.additional_info textarea {
+    height: 8rem;
+    max-height: 20rem;
+}
+
+form label.your_details input {
+    border-left: 6px solid rgba(0,0,0,0.1);
+}
+
+form label.your_details input:required {
+    border-left: 6px solid red;
+}
+
+form label.your_details input:required:valid {
+    border-left: 6px  solid green;
+}
+
+form p {
+    padding: 0;
+    margin: 0;
+}
+
+.additional_radio {
+    font-size: 1rem;
+}
+
+.additional_radio {
+    padding-top: 0;
+    padding-bottom: 1rem;
+}
+
+input[type="radio"] {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Chrome, Safari, Opera */
+    transform: scale(1.5);
+    padding: 1rem;
+    margin-right: 1rem;
+}
+
+#fs_additional p {
+    padding: 0.2rem;
+    margin: 0;
+}
+
+#submitBtn {
+    font-size: 1rem;
+    padding: .75rem;
+    border-color: #999;
+    border-radius: 10px;
+    background-color: #086788;
+    color: white;
+    margin-left: 2rem;
+}
+
+.thanks {
+    text-align: center;
+}
+/* ---------------- END FORMS ---------------------- */
+
+/* START INDIVIDUAL PAGE SECTION HERE */
+.content p {
+    margin-top: .5rem;
+    font-size: 1rem;
+    padding-right: 1rem;
+}
+
+.content h2 {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.content h3 {
+    font-size: 1.3rem;
+    padding-left: 1rem;
+}
+
+.content {
+    text-align: center;    
+    border: 1px solid #999;
+    border-radius: 10px;
+    margin: 1rem;
+    background-color: rgba(255,255,255,.8);
+}
+
+.content img {
+    padding: 1rem 0 0 0;
+    max-width: 100%;
+}
+
+.content h2, .content h3, .content p {
+    text-align: left;
+}
+
+.content figure {
+    background-color: white;
+    border: 1px solid #999;
+    box-shadow: 5px 5px 5px #999;
+    width: fit-content;
+    padding: 0 1rem;
+    margin: 1rem auto;
+    max-width: 80%;
+}
+
+.town-info {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding-bottom: 1rem;
+    border: 1px solid #999;
+    margin-bottom: 1rem;
+}
+
+.town-info p {
+    padding: 0 1rem;
+}
+
+.town-info:last-child {
+    margin-bottom: 0;
+    border-bottom: none;
+}
+
+.town-banner {
+    position: relative;
+}
+
+.town-banner img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.town-banner-content {
+    position: absolute;
+    width: 100%;
+}
+
+.town-banner-content p {
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgba(255,255,255, 0.6);
+    padding: 0;
+}
+
+.town-banner-content p:nth-child(1){
+    font-size: 3rem;
+}
+
+.town-banner-content p:nth-child(2){
+    font-size: 1.5rem;
+}
+
+.block-img {
+    display: none;
+}
