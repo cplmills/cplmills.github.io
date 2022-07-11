@@ -212,8 +212,10 @@ figcaption {
     grid-template-columns: 1fr 1fr;
 }
 
-.weather-table span {
-    padding-left: 1em;
+.weather-table h3 {
+    text-decoration: none;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
 }
 
 .weather-table .value {
@@ -230,6 +232,7 @@ figcaption {
 .weather-table .attribute {
     font-weight: bolder;
     padding: 3px;
+    padding-left: 1rem;
 }
 
 .weather-table-blue{

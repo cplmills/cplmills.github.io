@@ -167,7 +167,7 @@
 
     .weather-table {
         position: absolute;
-        top: 4em;
+        top: 1rem;
         left: 10px;
         background-color: rgba(255,255,255, 0.6);
         border: 1px solid #086788;
