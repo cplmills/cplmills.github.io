@@ -279,6 +279,8 @@
 
     .block-img {
         display: block;
+        max-width: 100%;
+        height: auto;
     }
 
     .town-banner-content {
