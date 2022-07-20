@@ -421,12 +421,12 @@ input[type="radio"] {
 }
 
 #submitBtn {
-    font-size: 1rem;
+    font-size: 1.5rem;
     padding: .75rem;
     border-color: #999;
     border-radius: 10px;
-    background-color: var(--menu-color);
-    color: white;
+    background-color: var(--reserve-banner-color);
+    color: var(--top-band-color);
     margin-left: 2rem;
 }
 
