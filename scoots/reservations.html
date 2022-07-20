@@ -19,7 +19,7 @@
             <div id="black-header-bar">&nbsp;</div>
             <div id="logo-with-text"><img src="/scoots/images/logo.png" alt="Scoots company logo"></div>
             <div id="logo-bike-only"><img src="/scoots/images/logo-long.webp" alt="Scoots company logo"></div>
-            <section id="reserve-banner">Reserve Now!</section>
+            <div id="reserve-banner">Reserve Now!</div>
         </header>
         <nav>
             <ul class="navigation">
@@ -79,17 +79,16 @@
                                 <datalist id="vehicle_type">
                                 </datalist>
                             </label>
-                            <label class="pickup_details">Pickup Location:
-                                <label class="pickup-details-radio"><input type="radio" name="pickup-location" class="user_in_danger" value="Cozumel Ferry Dock Branch" onclick="showDelivery();" > Cozumel Ferry Dock Branch</label>
-                                <label class="pickup-details-radio"><input type="radio" name="pickup-location" class="user_in_danger" value="Terminal Puerta Maya Branch" onclick="showDelivery();" > Terminal Puerta Maya Branch</label>
-                                <label class="pickup-details-radio"><input type="radio" name="pickup-location" class="user_in_danger" value="Delivery" onclick="showDelivery();" id="delivery-required"> Delivery Required</label>
-                            </label>                    
+                            <label class="pickup_details">Pickup Location:</label>
+                            <label class="pickup-details-radio"><input type="radio" name="pickup-location" class="user_in_danger" value="Cozumel Ferry Dock Branch" onclick="showDelivery();" > Cozumel Ferry Dock Branch</label>
+                            <label class="pickup-details-radio"><input type="radio" name="pickup-location" class="user_in_danger" value="Terminal Puerta Maya Branch" onclick="showDelivery();" > Terminal Puerta Maya Branch</label>
+                            <label class="pickup-details-radio"><input type="radio" name="pickup-location" class="user_in_danger" value="Delivery" onclick="showDelivery();" id="delivery-required"> Delivery Required</label>
                         </fieldset>
                     </div>
                     <div class="form-section">
                         <fieldset id="fs_delivery">
                             <legend>Delivery Details</legend>
-                            <label class="additional_info">Delivery Address<textarea rows="6" name="delivery-address" id="additional"></textarea></label>
+                            <label class="additional_info">Delivery Address<textarea rows="6" name="delivery-address" ></textarea></label>
                             <p>Vehicles will be delivered between 9am and 12am, please ensure you are there to sign the agreement and take delivery.</p>
                         </fieldset>
                     </div>
