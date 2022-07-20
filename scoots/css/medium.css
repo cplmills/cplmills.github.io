@@ -52,6 +52,11 @@
         
     }
 
+    h1 {
+        display: block;
+        max-width: 80%;
+        margin: 1rem 0;
+    }
 
     /* MAIN INDEX PAGE LAYOUT */
 
@@ -62,11 +67,13 @@
 
     #main-panel {
         grid-column: 1 / 2;
+        grid-row: 1 / -1;
     }
 
     #vehicle-tiles {
         display: inherit;
         grid-column: 2 / 3;
+        grid-row: 1 / -1;
     }
 
     #table-summary {
