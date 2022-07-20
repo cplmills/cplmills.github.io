@@ -70,7 +70,7 @@
     }
 
     #table-summary {
-        font-size: 1.8rem;
+        font-size: 1.4rem;
     }
 
     /* FORMS */
@@ -115,10 +115,6 @@
     }
 
     /* RESERVATIONS PAGE */
-    /* #terms {
-        padding: 1rem 3rem;
-        line-height: 2rem;
-    } */
     
     #terms ul {
         clear:both;

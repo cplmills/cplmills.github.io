@@ -1,5 +1,37 @@
 @media only screen and (min-width:1200px){
 
+body {
+    font-size: 1.3rem;
+}
 
+nav ul li{
+    font-size: 1.5rem;
+}
 
+div.vehicle-tile img {
+    width: 22rem;
+}
+
+div.vehicle-tile {
+    font-size: 1.5rem;
+}
+
+div.socials ul li img:hover{
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 0;
+    
+} 
+
+div.contact-info a {
+    font-size: 1.8rem;
+}
+
+#table-summary {
+    font-size: 1.8rem;
+}
+
+.vehicle-tile-horizontal {
+    font-size: 1.5rem;;
+}
 }
