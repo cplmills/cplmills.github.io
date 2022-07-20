@@ -88,7 +88,7 @@
 
     form label, form div {
         font-size: 1.3rem;
-        margin-left: 1rem auto;
+        margin-left: 1rem;
     }
 
     form label.your_details input, form label.your_details select, form .storm_details select, form label.storm_details input, form label.additional_info textarea {        
