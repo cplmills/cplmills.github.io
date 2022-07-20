@@ -159,6 +159,10 @@ main p {
     clear: both;
 }
 
+#main-panel figure {
+    margin-top: 1rem;
+}
+
 figure {
     padding: 0;
     font-style: italic;
