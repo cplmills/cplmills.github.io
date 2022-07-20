@@ -6,42 +6,114 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Scoots provides scooter and vehicle hire for the island of Cozumal off the coast of Mexico">
-
-        <link rel="stylesheet" href="css/normalise.css">
+        <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/small.css">
         <link rel="stylesheet" href="css/medium.css">
-        <link rel="stylesheet" href="css/large.css">
+        <!-- <link rel="stylesheet" href="css/large.css"> -->
+        <script src="js/vehicleTiles.js"></script>
+        <script src="js/weatherapi.js"></script>
         <script src="js/scripts.js"></script>
     </head>
     <body>
         <header>
-            <img src="/scoots/images/logo.png" alt="Scoots company logo">
-            <section class="reserve-banner">Reserve Now!</section>
+            <div id="black-header-bar">&nbsp;</div>
+            <div id="logo-with-text"><img src="/scoots/images/logo.png" alt="Scoots company logo"></div>
+            <div id="logo-bike-only"><img src="/scoots/images/logo long.webp" alt="Scoots company logo"></div>
+            <section id="reserve-banner">Reserve Now!</section>
         </header>
         <nav>
-            <li>
-                <ul>Home</ul>
-                <ul>Our Vehicles</ul>
-                <ul>Reserve</ul>
-                <ul>Tours</ul>
-                <ul>Contact Us</ul>
-            </li>
-            <div id="breadcrumbs">Breadcrumbs here</div>
+            <ul class="navigation">
+                <li id="menuButton"><a href="#" onclick="toggleMenu('navigation', 'responsive'); ">&#9776; Menu</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rentals.html">Our Vehicles</a></li>
+                <li><a href="reservations.html">Reserve</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+            <div id="breadcrumbs">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+            </div>
         </nav>
         <main>
-            <div id="main">
-                <p>Scoots is possibly the best motor scooter rental company located on the island of Cozumel off the coast of Mexico in the western Caribbean Sea. We are an owner-operator company that caters to locals, walk-in tourists, enthusiasts, and cruise-based touring groups and partnerships. Our company has two physical rental locations on Cozumel. One is near the Playa del Carmen-Cozumel Ferry dock in el Centro de Cozumel and the other is near the Terminal Puerta Maya further south along the coast which caters to the cruise lines and patrons. We promote friendly and easy to rent services of motor scooters, jeeps, and side-by-sides ATVs. </p>
-                <div id="local-weather">5 day forecast here</div>
+            <div id="main-grid">
+                <div id="main-panel">
+                    <figure>
+                        <img src="images/scooter-yellow-house.webp" alt="Scooter parked outside a yellow house">
+                        <figcaption>
+                            Photo by <a href="https://unsplash.com/@ruslanbardash?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ruslan Bardash</a> on <a href="https://unsplash.com/s/photos/scooter?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                        </figcaption>
+                    </figure>
+                    <p>
+                        Scoots is possibly the best motor scooter rental company on the Island of Cozumel. Cozumel is located off the coast of Mexico in the western Caribbean Sea. Scoots are an owner-operated company that caters to locals, walk-in tourists, enthusiasts, and cruise-based touring groups and partnerships. Our company has two physical rental locations on Cozumel. One is near the Playa del Carmen-Cozumel Ferry dock in el Centro de Cozumel and the other is near the Terminal Puerta Maya further south along the coast which caters to the cruise lines and patrons. We promote friendly and easy to rent services of motor scooters, jeeps, and side-by-sides ATVs. <br><br>
+                        We offer a wide range of vehicles starting from a single person scooter, all the way up to a 4-door Jeep Wrangler, perfect if you want to get off the beaten track.<br><br>
+                    </p>
+                    <figure>
+                        <img src="images/jeep-off-road.webp" alt="Jeep Wrangler off the beaten track driving through scrub">
+                        <figcaption>Photo by <a href="https://unsplash.com/@onxoffroad?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">onX Offroad</a> on <a href="https://unsplash.com/s/photos/jeep?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></figcaption>
+                    </figure>
+                    <p>
+                        With 2 easy to access locations on the island, we make it easy for you to rent and return wherever you like! Our first location is situated right by the Playa Del Carmen Cozumel Ferry Dock in El Centro De Cozumel. Our second location is near the terminal Puerta Maya, further south along the coast. Whether you want to explore the roads of the island on a scooter with the wind blowing in your hair, or go off road and explore our beaches and inland trails with a 4WD Jeep, we have the vehicle to suit your needs. Visit our <a href="vehicles.html">Vehicles page</a> for more information on the vehicles we have available to rent. From there, hop over to our <a href="tours.html">Tours page</a> for advise on where to visit once you have your wheels.</a>
+                    </p>
+                    
+                    <div id="local-weather">
+                        <table>
+                            <tr>
+                                <th colspan="3">Local Weather Conditions</th>
+                            </tr>
+                            <tr>
+                                <th>Conditions</th>
+                                <th>Temperature</th>
+                                <th>Humidity</th>
+                            </tr>
+                            <tr>
+                                <td><img src="images/sun_icon.png" alt="Temperature" id="currently-img"><span id="currently"></span></td>
+                                <td id="temperature"><img src="images/sun_icon.png" alt="Conditions"></td>
+                                <td id="humidity"><img src="images/sun_icon.png" alt="Humidity"></td>
+                            </tr>
+                        </table>
+                        <table id="five-day-table">
+                            <tr>
+                                <th colspan="5" id="next-week">Weather the next five days</td>
+                            </tr>
+                            <tr>
+                                <td><span class="five-day"></span><img src="#" class="day-icon"></td>
+                                <td><span class="five-day"></span><img src="#" class="day-icon"></td>
+                                <td><span class="five-day"></span><img src="#" class="day-icon"></td>
+                                <td><span class="five-day"></span><img src="#" class="day-icon"></td>
+                                <td><span class="five-day"></span><img src="#" class="day-icon"></td>
+                            </tr>
+                        </table>    
+                    </div>
+                </div>
+                
+                <div id="vehicle-tiles">
+                    
+                </div>
             </div>
-            <div id="vehicle-tiles">
-                Vehicle tiles here
-            </div>
-
         </main>
         <footer>
-            <ul>
-                <li></li>
-            </ul>
+            <div class="contact">
+                <h3>Contact Information</h3>
+                <div class="contact-info">
+                    <p><a href="mailto:admin@themillsclan.com">admin@themillsclan.com</a></p>
+                    <p><a href="tel:+61403444555">+61 (403) 444 555</a></p>
+                    <p><a href="https://goo.gl/maps/x9HkevXD5JppihzP6">31 Pine Creek Rd, Queensland, 4213</a></p>
+                </div>
+                <img src="images/island-map.webp" alt="Map of the island of Cozumel">
+            </div>
+            <div class="socials">
+                <ul>
+                    <li><a href="http://www.pinterest.com"><img src="images/Pinterest-Icon.png" alt="Pinterest Logo"></a></li>
+                    <li><a href="http://www.twitter.com"><img src="images/Twitter-Icon.png" alt="Twitter Logo"></a></li>
+                    <li><a href="http://www.instagram.com"><img src="images/Instagram-Icon.png" alt="Instagram Logo"></a></li>
+                    <li><a href="http://www.facebook.com"><img src="images/Facebook-Icon.png" alt="Facebook Logo"></a></li>
+                </ul>
+            </div>
+            <div id="lastModified"></div>
         </footer>
+        <script>vehicleTiles('vehicle-tiles', 'vehicle-tile'); activeLink(); lastModified();</script>
+        <script>weatherData("3530103");</script>
     </body>
 </html>

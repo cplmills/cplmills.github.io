@@ -1,5 +1,514 @@
 @import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300&display=swap');
 
-body {
+:root {
+    --main-bg-color: #E6ECF3;
+    --top-band-color: #363745;
+    --header-color: #BFDAD8;
+    --reserve-banner-color: #DDBB4E;
+    --menu-color: #AE9152;
+}
 
+body {
+    font-family: "Signika Negative", sans-serif;
+    background-color: var(--main-bg-color);
+    font-size: clamp(1rem, 1.2rem, 3rem);
+}
+
+.fine-print {
+    font-size: 1rem;
+    padding: 0 1rem;
+    margin: 1rem 0 0 0;
+}
+
+h2 {
+    text-align: center;
+}
+
+.blue-banner {
+    clear: both;
+    margin: 1rem 0;
+    background-color: var(--header-color);
+    border-top: 1px solid rgb(1, 50, 37);
+    border-bottom: 1px solid rgb(1, 50, 37);
+    padding: 1rem;
+}
+
+iframe {
+    max-width: 100%;
+}
+/*  HEADER STYLES */
+
+header {
+    background-color: var(--header-color);
+    background-image: url(../images/header.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#black-header-bar {
+    width: 100%;
+    background-color: var(--top-band-color);
+}
+
+header img {
+    display: block;
+    margin: 0 auto;
+    max-width: 15rem;
+    background-color: rgba(255,255,255, 0.6);
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+#logo-bike-only {
+    display: none;
+}
+
+#reserve-banner {
+    background-color: var(--reserve-banner-color);
+    text-align: center;
+    font-size: clamp(2rem, 2rem, 3rem);
+    padding: .5rem;
+    cursor: pointer;
+}
+
+/* NAVIGATION MENU */
+nav {
+    background-color: var(--menu-color);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: none;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul li:hover{
+    background-color: var(--main-bg-color);
+    border: 1px solid var(--main-bg-color);
+    padding: 9px;
+}
+
+nav ul .activeLink {
+    color: white;
+    font-weight: bold;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    width: 100%;
+}
+
+.responsive li{
+    display: block;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+.responsive li{
+    display: block;
+}
+
+/* BREADCRUMBS */
+
+#breadcrumbs {
+    display: none;
+    background-color: white;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: .5rem;
+}
+
+#breadcrumbs ul, #breadcrumbs ul li {
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+#breadcrumbs::before {
+    content: " / ";
+    padding: 0 10px;
+}
+
+/* MAIN AREA */
+
+main img {
+    display: block;
+    width: 90%;
+    max-width: 600px;
+    margin: 1rem auto;
+    background-color: white;
+    padding: .5rem;
+    border: 1px solid black;
+}
+
+main p {
+    padding: 1rem;
+}
+
+#main-panel, main, #local-weather {
+    overflow: auto;
+    clear: both;
+}
+
+figure {
+    padding: 0;
+    font-style: italic;
+    font-size: .8rem;
+    margin: 0;
+}
+
+figure img {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 100%;
+}
+
+figcaption {
+    padding-bottom: 1rem;
+}
+
+
+/* SPECIFIC INDEX PAGE STYLES BEGIN HERE */
+
+/* LOCAL WEATHER TABLE (5 DAY FORECAST) */
+
+#local-weather {
+    margin: 2rem 0;
+}
+
+#local-weather table tr:nth-of-type(3) {
+    font-size: 2rem;
+}
+
+#local-weather table {
+    text-align: center;
+    margin: 0 auto;
+    width: 95%;
+    max-width: 800px;
+}
+
+#local-weather table td:nth-child(odd){
+    background-color: white;
+}
+
+#local-weather table td {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#local-weather img {
+    display: block;
+    border: 0;
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+#five-day-table td {
+    background-color: white;
+}
+/* VEHICLE INFORMATION TILES SIDEBAR */
+
+#vehicle-tiles {
+    display: block;
+    border-left: 1px solid black;
+}
+
+#vehicle-tiles-horizontal {
+    display: flex;
+    max-width: 100%;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-self: center;
+    justify-content: center;
+}
+
+.vehicle-tile {
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+    width: 95%;
+    margin: 1rem auto;
+}
+
+.vehicle-tile-horizontal {
+    border: 1px solid #999;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.vehicle-tile img{
+    border: 0;
+    width: 60%;
+    padding: 0;
+    margin: .5rem auto;
+}
+
+.vehicle-tile-horizontal img {
+    min-height: 183px;
+    border: 0;
+    width: 20rem;
+    padding: 0;
+}
+
+.vehicle-tile b, .vehicle-tile-horizontal b {
+    display: block;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    background-color: var(--header-color);
+    padding: 1rem;
+}
+
+.vehicle-tile p, .vehicle-tile-horizontal p {
+    padding: 0 1rem;
+}
+/* END OF INDEX PAGE SPECIFIC STYLES */
+
+/* START OF RENTALS PAGE SPECIFIC STYLES */
+
+#vehicle-summary tr, #vehicle-summary td, #vehicle-summary th {
+    border: 1px solid #999;
+}
+
+#table-summary {
+    margin: auto;
+    text-align: center;
+    max-width: 90%;
+    clear: both;
+    font-size: 1rem;
+}
+
+#table-summary table {
+    margin: 2rem auto;
+}
+
+#table-summary tr:nth-child(odd){
+    background-color: var(--header-color);
+}
+
+#table-summary tr:nth-child(even){
+    background-color: white;
+}
+
+#table-summary th {
+    background-color: white;
+}
+
+#table-summary tr:hover {
+    background-color: antiquewhite;
+}
+/* RESERVATIONS PAGE */
+
+/* CONTACT US PAGE */
+
+.contact-scoots {
+    border: 1px solid black;
+    border-radius: 20px;
+    max-width: fit-content;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+
+/* ---------------- FORMS ---------------------- */
+#form-section {
+    padding-top: 0;
+}
+
+#form-container h2 {
+    margin-bottom: 0;
+}
+
+form fieldset {
+    margin: 0 2rem;
+    border: 1px solid #445ba9;
+    border-radius: 10px;
+    padding: 0.5rem 2%;
+}
+
+form input[type="submit"] {
+    margin-top: 1rem;
+}
+
+form legend {
+    color: #445ba9;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+
+form label, form div {
+    display: block;
+    padding-top: 1rem;
+    color: #086788;
+    font-size: .8rem;
+}
+
+form label.storm_details, label.output {
+    padding: 0;
+    margin: 0;
+}
+
+form label.your_details input, select, form label.your_details select, form label.storm_details input[type="date"], form label.additional_info textarea {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: 1px solid #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 85%;
+    max-width: 20rem;
+    background-color: rgba(0,0,0,0.1);
+}
+
+form label.additional_info textarea {
+    height: 8rem;
+    max-height: 20rem;
+}
+
+form label.your_details input {
+    border-left: 6px solid rgba(0,0,0,0.1);
+}
+
+form label.your_details input:required {
+    border-left: 6px solid red;
+}
+
+form label.your_details input:required:valid {
+    border-left: 6px  solid green;
+}
+
+form p {
+    padding: 0;
+    margin: 0;
+}
+
+.additional_radio {
+    font-size: 1rem;
+}
+
+.additional_radio {
+    padding-top: 0;
+    padding-bottom: 1rem;
+}
+
+input[type="radio"] {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Chrome, Safari, Opera */
+    transform: scale(1.5);
+    padding: 1rem;
+    margin-right: 1rem;
+}
+
+#fs_additional p {
+    padding: 0.2rem;
+    margin: 0;
+}
+
+#fs_delivery {
+    display: none;
+}
+
+#submitBtn {
+    font-size: 1rem;
+    padding: .75rem;
+    border-color: #999;
+    border-radius: 10px;
+    background-color: var(--menu-color);
+    color: white;
+    margin-left: 2rem;
+}
+
+.thanks {
+    text-align: center;
+}
+/* ---------------- END FORMS ---------------------- */
+/*  FOOTER  */
+
+footer {
+    background-color: var(--top-band-color);
+    margin-top: 2rem;
+}
+
+.contact {
+    overflow: auto;
+}
+
+.contact img {
+    display: block;
+    max-width: 90%;
+    margin: 0 auto 1rem auto;
+}
+
+.contact-info {
+    color: white;
+    display: inline;
+}
+
+.contact-info a {
+    color: white;
+    text-decoration: none;
+    padding-left: 1rem;
+}
+
+.contact-info p::before {
+    font-size: 2.5rem;
+    padding-left: 1rem;
+}
+
+.contact-info p:nth-child(1)::before {
+    content: "\2709";
+}
+
+.contact-info p:nth-child(2)::before {
+    content: "\2706";
+}
+
+.contact-info p:nth-child(3)::before {
+    content: "\2735"
+}
+
+.contact h3 {
+    color: white;
+    padding: 1rem 0 0 1rem;
+    margin-top: 0;
+    border-bottom: 1px solid white;
+}
+
+.socials {
+    border-top: 1px solid white;
+    padding: 1rem;
+    padding-bottom: 0;
+    padding: 1rem 0;
+}
+
+.socials ul{
+    display: flex;
+    padding: 0;
+}
+
+.socials li {
+    gap: 1rem;
+    flex-grow: 1;
+    list-style: none;
+}
+
+.socials img {
+    display: block;
+    margin: 0 auto;
+}
+
+#lastModified {
+    color: white;
 }

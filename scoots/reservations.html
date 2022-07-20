@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="en-au">
+    <head>
+        <title>Chris Mills - WDD 230 Scoots Website</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Scoots provides scooter and vehicle hire for the island of Cozumal off the coast of Mexico">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+        <script src="js/formValidation.js"></script>
+        <script src="js/vehicleSummary.js"></script>
+        <script src="js/scripts.js"></script>
+    </head>
+    <body>
+        <header>
+            <div id="black-header-bar">&nbsp;</div>
+            <div id="logo-with-text"><img src="/scoots/images/logo.png" alt="Scoots company logo"></div>
+            <div id="logo-bike-only"><img src="/scoots/images/logo long.webp" alt="Scoots company logo"></div>
+            <section id="reserve-banner">Reserve Now!</section>
+        </header>
+        <nav>
+            <ul class="navigation">
+                <li id="menuButton"><a href="#" onclick="toggleMenu('navigation', 'responsive'); ">&#9776; Menu</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rentals.html">Our Vehicles</a></li>
+                <li><a href="reservations.html">Reserve</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+            <div id="breadcrumbs">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+            </div>
+        </nav>
+        <main>
+            <div id="terms">
+                <h2>Information and Services</h2>
+                <figure class="rentals-figure">
+                    <img src="images/cozumel-town.webp" alt="Street view of Cozumel Town Markets">
+                    <figcaption class="rentals-figcaption">Photo by <a href="https://unsplash.com/@bradencollum?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Braden Collum</a> on <a href="https://unsplash.com/s/photos/cozumel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></figcaption>
+                </figure>
+                <ul>
+                    <li>A $50 security deposit is required to confirm reservations.</li>
+                    <li>A valid drivers license is required in hand at time of rental.</li>
+                    <li>No one under 12 years of age is allowed to ride on the scooters.</li>
+                    <li>Fuel charge not included.</li>
+                    <li>Unlimited mileage.</li>
+                    <li>Liability insurance is free of charge.</li>
+                    <li>Reservations rate requires 24 hour prior notification.</li>
+                    <li>Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals.</li>
+                    <li>Payment via Google Pay, cash, credit card, debit card, or PayPal.</li>
+                    <li>Rentals may be returned to either location.</li>
+                </ul>
+            </div>
+            <div id="form-container">
+                <h2>Reservations Form</h2>
+                <form method="get" action="thanks.html">
+                    <div class="form-section">
+                        <fieldset>
+                            <legend>Your Details</legend>
+                            <label class="your_details">Full Name*<input type="text" name="fname" pattern="^([a-zA-Z ]){5,}$" required></label>
+                            <label class="your_details">Email<input type="email" name="email" placeholder="name@domain.com" required></label>
+                            <label class="your_details">Phone Number*<input type="tel" name="phone" pattern="^([0-9]){9,}$" required></label>
+                            <label class="your_details">Home Country*<input type="text" name="country" required></label>
+                            <label class="your_details">Cruise Line<input type="text" name="cruise"></label>
+                        </fieldset>
+                    </div>
+                    <div class="form-section">
+                        <fieldset>
+                            <legend>Rental Details</legend>
+                            <label class="your_details">Pickup Date<input type="date" name="pickupdate"></label>
+                            <label class="your_details">Dropoff Date<input type="date" name="dropoffdate"></label>
+                            <label class="your_details">Vehicle Type Required
+                                <input list="vehicle_type">
+                                <datalist id="vehicle_type">
+                                </datalist>
+                            </label>
+                            <label class="pickup_details">Pickup Location:
+                                <label class="pickup-details-radio"><input type="radio" name="pickup-location" class="user_in_danger" value="Cozumel Ferry Dock Branch" onclick="showDelivery();" > Cozumel Ferry Dock Branch</label>
+                                <label class="pickup-details-radio"><input type="radio" name="pickup-location" class="user_in_danger" value="Terminal Puerta Maya Branch" onclick="showDelivery();" > Terminal Puerta Maya Branch</label>
+                                <label class="pickup-details-radio"><input type="radio" name="pickup-location" class="user_in_danger" value="Delivery" onclick="showDelivery();" id="delivery-required"> Delivery Required</label>
+                            </label>                    
+                        </fieldset>
+                    </div>
+                    <div class="form-section">
+                        <fieldset id="fs_delivery">
+                            <legend>Delivery Details</legend>
+                            <label class="additional_info">Delivery Address<textarea rows="6" name="delivery-address" id="additional"></textarea></label>
+                            <p>Vehicles will be delivered between 9am and 12am, please ensure you are there to sign the agreement and take delivery.</p>
+                        </fieldset>
+                    </div>
+                    <div class="form-section">
+                        <fieldset id="fs_additional">
+                            <legend>Additional Information</legend>
+                            <label class="additional_info">Is there anything else you would like us to know?<textarea rows="6" name="additional" id="additional"></textarea></label>
+                        </fieldset>
+                        <input type="submit" value="Reserve Vehicle" id="submitBtn">
+                    </div>
+                </form>
+            </div>
+        </main>
+        <footer>
+            <div class="contact">
+                <h3>Contact Information</h3>
+                <div class="contact-info">
+                    <p><a href="mailto:admin@themillsclan.com">admin@themillsclan.com</a></p>
+                    <p><a href="tel:+61403444555">+61 (403) 444 555</a></p>
+                    <p><a href="https://goo.gl/maps/x9HkevXD5JppihzP6">31 Pine Creek Rd, Queensland, 4213</a></p>
+                </div>
+                <img src="images/island-map.webp" alt="Map of the island of Cozumel">
+            </div>
+            <div class="socials">
+                <ul>
+                    <li><a href="http://www.pinterest.com"><img src="images/Pinterest-Icon.png" alt="Pinterest Logo"></a></li>
+                    <li><a href="http://www.twitter.com"><img src="images/Twitter-Icon.png" alt="Twitter Logo"></a></li>
+                    <li><a href="http://www.instagram.com"><img src="images/Instagram-Icon.png" alt="Instagram Logo"></a></li>
+                    <li><a href="http://www.facebook.com"><img src="images/Facebook-Icon.png" alt="Facebook Logo"></a></li>
+                </ul>
+            </div>
+            <div id="lastModified"></div>
+        </footer>
+        <script>lastModified(); activeLink();</script>
+        <script>fillVehicleDropDown('#vehicle_type');</script>
+    </body>
+</html>

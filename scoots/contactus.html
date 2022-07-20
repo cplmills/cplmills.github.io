@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-au">
+    <head>
+        <title>Chris Mills - WDD 230 Scoots Website</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Scoots provides scooter and vehicle hire for the island of Cozumal off the coast of Mexico">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+        <script src="js/scripts.js"></script>
+    </head>
+    <body>
+        <header>
+            <div id="black-header-bar">&nbsp;</div>
+            <div id="logo-with-text"><img src="/scoots/images/logo.png" alt="Scoots company logo"></div>
+            <div id="logo-bike-only"><img src="/scoots/images/logo long.webp" alt="Scoots company logo"></div>
+            <section id="reserve-banner">Reserve Now!</section>
+        </header>
+        <nav>
+            <ul class="navigation">
+                <li id="menuButton"><a href="#" onclick="toggleMenu('navigation', 'responsive'); ">&#9776; Menu</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rentals.html">Our Vehicles</a></li>
+                <li><a href="reservations.html">Reserve</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+            <div id="breadcrumbs">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+            </div>
+        </nav>
+        <main>
+            <div id="contactus-container">
+                <h1> Contact Scoots</h1>
+                <p>Can't find what your looking for? Have a question that we havent answered yet?<br> Drop us a line or drop in and see us on site!</p>
+                <form method="get" action="thanks.html">
+                    <div class="form-section">
+                        <fieldset class="contactus">
+                            <legend>Your Details</legend>
+                            <label class="your_details">Full Name*<input type="text" name="fname" pattern="^([a-zA-Z ]){5,}$" required></label>
+                            <label class="your_details">Email*<input type="email" name="email" placeholder="name@domain.com" required></label>
+                            <label class="your_details">Phone Number*<input type="tel" name="phone" pattern="^([0-9]){9,}$" required></label>
+                            <label class="additional_info">Message<textarea rows="6" name="additional" id="additional"></textarea></label>  
+                        * - Required Field
+                        </fieldset>
+                    </div>
+                    <input type="submit" value="Send Message" id="submitBtn">
+                </form>
+            </div>
+            <h3 class="blue-banner">Our Locations</h3>
+            <div id="locations-div">
+            <section class="contact-scoots">
+                <h2>Cozumel Ferry Dock</h2>
+               Location : <br>Cozumel Ferry Dock<br>
+               <br>
+               Address  : <br>Playa del Carmen-Cozumel Ferry dock<br>
+               el Centro de Cozumel<br>
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3736.8836819121834!2d-86.95402547445896!3d20.510994042401155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e59cf3a0ece15%3A0x9216e3c2b55e5526!2sPlaya%20del%20Carmen-Cozumel%20Ferry%20Dock!5e0!3m2!1sen!2sau!4v1658300986821!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+            <section class="contact-scoots">
+                <h2>Terminal Puerta Maya</h2>
+                Location : <br>Terminal Puerta Maya<br>
+                <br>
+                Address  : <br>Cozumel Cruise Terminal<br>
+                Cozumel<br>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3737.744427640544!2d-86.97750968499614!3d20.47568758630062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e59cd70625421%3A0xb1974a1818657af2!2sCozumel%20Cruise%20Terminal!5e0!3m2!1sen!2sau!4v1658301092368!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+             </section>
+            </div>
+        </main>
+        <footer>
+            <div class="contact">
+                <h3>Contact Information</h3>
+                <div class="contact-info">
+                    <p><a href="mailto:admin@themillsclan.com">admin@themillsclan.com</a></p>
+                    <p><a href="tel:+61403444555">+61 (403) 444 555</a></p>
+                    <p><a href="https://goo.gl/maps/x9HkevXD5JppihzP6">31 Pine Creek Rd, Queensland, 4213</a></p>
+                </div>
+                <img src="images/island-map.webp" alt="Map of the island of Cozumel">
+            </div>
+            <div class="socials">
+                <ul>
+                    <li><a href="http://www.pinterest.com"><img src="images/Pinterest-Icon.png" alt="Pinterest Logo"></a></li>
+                    <li><a href="http://www.twitter.com"><img src="images/Twitter-Icon.png" alt="Twitter Logo"></a></li>
+                    <li><a href="http://www.instagram.com"><img src="images/Instagram-Icon.png" alt="Instagram Logo"></a></li>
+                    <li><a href="http://www.facebook.com"><img src="images/Facebook-Icon.png" alt="Facebook Logo"></a></li>
+                </ul>
+            </div>
+            <div id="lastModified"></div>
+        </footer>
+        <script>lastModified(); activeLink();</script>
+    </body>
+</html>

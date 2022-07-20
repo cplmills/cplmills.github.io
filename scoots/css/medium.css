@@ -1,0 +1,196 @@
+@media only screen and (min-width:600px) {
+  
+    #logo-with-text {
+        display: none;
+    }
+
+    #logo-bike-only {
+        display: block;
+        padding: 1rem 0;
+        margin: 0 auto;
+    }
+
+    header img {
+        max-width: 25rem;
+    }
+    /* navigation bar */
+    nav ul {
+        display: flex;
+        flex-grow: 1;
+    }
+    
+    nav ul li {
+        display: inherit;  
+        flex-grow: 1;    
+        justify-content: center;
+    }
+    
+    .navigation li:first-child {
+        display: none;
+    }
+
+    #reserve-banner::before {
+        content: "Click Here to ";
+    }
+
+    #breadcrumbs {
+        display: none;
+    }
+
+    /*  top image */
+
+    figure {
+        width: fit-content;
+        margin: 0 auto;
+    }
+    figure img {
+        margin: 0 auto;
+    }
+
+    figcaption, figcaption a {
+        color: black;
+        
+    }
+
+
+    /* MAIN INDEX PAGE LAYOUT */
+
+    #main-grid {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+    }
+
+    #main-panel {
+        grid-column: 1 / 2;
+    }
+
+    #vehicle-tiles {
+        display: inherit;
+        grid-column: 2 / 3;
+    }
+
+    #table-summary {
+        font-size: 1.8rem;
+    }
+
+    /* FORMS */
+
+    form fieldset {
+        margin-bottom: 1rem;
+        padding: 1rem;
+        padding-left: 5rem;
+        max-width: 40rem;
+    }
+
+    #fs_delivery p {
+        max-width: 28rem;
+    }
+
+    form label, form div {
+        font-size: 1.3rem;
+        margin-left: 1rem auto;
+    }
+
+    form label.your_details input, form label.your_details select, form .storm_details select, form label.storm_details input, form label.additional_info textarea {        
+        padding: .4rem 0;
+        max-width: 40rem;
+        padding-left: .4rem;
+    }
+
+    .form-section {
+        min-width: 40rem;
+    }
+    
+    #form-container form {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #form-container h2 {
+        clear: both;
+        border-top: 1px solid #999;
+        margin-bottom: 0;
+        padding-top: 2rem;
+
+    }
+
+    /* RESERVATIONS PAGE */
+    /* #terms {
+        padding: 1rem 3rem;
+        line-height: 2rem;
+    } */
+    
+    #terms ul {
+        clear:both;
+        text-decoration: none;
+        list-style:disc;
+        margin: 1rem;
+    }
+ 
+    /* TOURS PAGE */
+
+    div.tour img {
+        max-width: 50%;
+        margin: 1rem;
+    }
+
+    div.tour h2 {
+        clear: both;
+        margin: 1rem 0;
+        background-color: var(--header-color);
+        border-top: 1px solid rgb(1, 50, 37);
+        border-bottom: 1px solid rgb(1, 50, 37);
+        padding: 1rem;
+    }
+    div.tour:nth-child(odd) img{
+        float: left;
+    }
+
+    div.tour:nth-child(even) img{
+        float: right;
+    }
+    /* CONTACT US PAGE */
+
+    #locations-div {
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        flex-wrap: wrap;
+        
+    }
+
+    #contactus-container {
+        margin: 0 auto;
+        width: fit-content;
+        
+    }
+
+    /* FOOTER */
+
+    .contact img {
+        float: right;
+        max-width: 40%;
+        margin-right: 1rem;
+    }
+
+    .socials {
+        clear: both;
+    }
+    
+    .socials ul {
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .socials li {
+        margin: 0 auto;
+        gap: 0;
+        padding: 0;
+        justify-content: center;
+    }
+
+    .contact-info {
+        float: left;
+    }
+
+}
