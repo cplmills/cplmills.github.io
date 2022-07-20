@@ -3,7 +3,7 @@
       "id": 1,
       "model": "Honda Metro Scooter",
       "maxPersons": 1,
-      "photo": "images/vehicles/hondaMetro.jpg",
+      "photo": "images/vehicles/hondaMetro.webp",
       "reservation": 
         {
           "halfDay": 20,
@@ -21,7 +21,7 @@
       "id": 2,
       "model": "Honda Dio Scooter",
       "maxPersons": 2,
-      "photo": "images/vehicles/hondaDio.jpg",
+      "photo": "images/vehicles/hondaDio.webp",
       "reservation": 
         {
           "halfDay": 30,
@@ -39,7 +39,7 @@
       "id": 3,
       "model": "Honda PCX150 Scooter",
       "maxPersons": 2,
-      "photo": "images/vehicles/hondaPCX150.jpg",
+      "photo": "images/vehicles/hondaPCX150.webp",
       "reservation": 
         {
           "halfDay": 40,
@@ -57,7 +57,7 @@
       "id": 4,
       "model": "Honda Pioneer ATV",
       "maxPersons": 4,
-      "photo": "images/vehicles/hondaPioneer.jpg",
+      "photo": "images/vehicles/hondaPioneer.webp",
       "reservation": 
         {
           "halfDay": 50,
@@ -75,7 +75,7 @@
       "id": 5,
       "model": "Jeep Wrangler - 4 Door with A/C",
       "maxPersons": 5,
-      "photo": "images/vehicles/jeepWrangler4Door.jpg",
+      "photo": "images/vehicles/jeepWrangler4Door.webp",
       "reservation": 
         {
           "halfDay": 70,
@@ -93,7 +93,7 @@
       "id": 6,
       "model": "Jeep Wrangler - Two Door",
       "maxPersons": 4,
-      "photo": "images/vehicles/jeepWrangler2Door.jpg",
+      "photo": "images/vehicles/jeepWrangler2Door.webp",
       "reservation": 
         {
           "halfDay": 60,
