@@ -10,6 +10,7 @@ function vehicleTiles(masterId, classname){
 
                 let newImg = document.createElement("img");
                 newImg.setAttribute('src', vehicle.photo);
+                newImg.setAttribute('alt', vehicle.model);
 
                 let newModel = document.createElement("b");
                 newModel.innerHTML = vehicle.model;
