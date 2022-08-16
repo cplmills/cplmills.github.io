@@ -1,0 +1,28 @@
+@media only screen and (min-width:600px) {
+
+    body {
+        font-size: .9rem;
+        background-color: hsl(203, 76%, 72%);
+    }
+
+    main {
+        display: grid;
+    }
+
+    #mugshot {
+        display: none;
+    }
+
+    .emoji {
+        font-size: .5rem;
+        margin-right: 1rem;
+        height: 15px;
+        width: 15px;
+        line-height: 15px; 
+    }
+
+    #top_left ul{
+        font-size: .7rem;
+    }
+
+}
