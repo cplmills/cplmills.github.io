@@ -81,19 +81,30 @@ main {
     line-height: 20px; 
 }
 
-#panel_education h2, #panel_skills h2 {
+#panel_education h2, #panel_skills h2, #panel_references h2 {
     padding: .5rem 1rem;
     background-color: hsl(203, 36%, 71%);
     margin: 0;
     border-top: 1px solid navy;
 }
 
-#panel_education h3 {
+#panel_education h3, #panel_references h3 {
     background-color: white;
     padding: 5px 1rem;
     border-top: 1px solid navy;
     border-bottom: 1px solid navy;
     margin: 0;
+}
+
+.break {
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid navy;    
+}
+
+#panel_references a, #panel_education a {
+    text-decoration: none;
+
 }
 
 #panel_skills h2 {
