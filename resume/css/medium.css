@@ -9,10 +9,6 @@
         display: grid;
     }
 
-    #mugshot {
-        display: none;
-    }
-
     .emoji {
         font-size: .5rem;
         margin-right: 1rem;

@@ -19,7 +19,7 @@ main {
     grid-column: 1 / 2;
     background-color: hsl(203, 76%, 72%);
     padding: 1rem;
-    max-height: 280px;
+    height: 100%;
 }
 
 #top_right {

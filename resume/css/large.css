@@ -1,4 +1,4 @@
-@media only screen and (min-width:746px) {
+@media only screen and (min-width:940px) {
     body {
         background-color: #e9e9e9;
 
@@ -17,5 +17,10 @@
     }
     #top_left ul{
         font-size: 1rem;
+    }
+
+    #top_left h1{
+            float: right;
+            margin-top: 3rem;           
     }
 }
